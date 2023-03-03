@@ -1,0 +1,2117 @@
+[
+  {
+    "Entity": "Afghanistan",
+    "total_cases": 209181,
+    "total_cases_per_million": 5086.002,
+    "total_deaths": 7896,
+    "total_deaths_per_million": 191.982,
+    "total_vaccinations": 13603457,
+    "Code": "AFG"
+  },
+  {
+    "Entity": "Africa",
+    "total_cases": 12515151,
+    "total_cases_per_million": 8771.872,
+    "total_deaths": 257668,
+    "total_deaths_per_million": 180.6,
+    "total_vaccinations": 769812781,
+    "Code": "OWID_AFR"
+  },
+  {
+    "Entity": "Albania",
+    "total_cases": 334336,
+    "total_cases_per_million": 117627.936,
+    "total_deaths": 3598,
+    "total_deaths_per_million": 1265.868,
+    "total_vaccinations": null,
+    "Code": "ALB"
+  },
+  {
+    "Entity": "Algeria",
+    "total_cases": 271431,
+    "total_cases_per_million": 6044.799,
+    "total_deaths": 6881,
+    "total_deaths_per_million": 153.241,
+    "total_vaccinations": null,
+    "Code": "DZA"
+  },
+  {
+    "Entity": "Andorra",
+    "total_cases": 47866,
+    "total_cases_per_million": 599501.522,
+    "total_deaths": 165,
+    "total_deaths_per_million": 2066.556,
+    "total_vaccinations": null,
+    "Code": "AND"
+  },
+  {
+    "Entity": "Angola",
+    "total_cases": 105205,
+    "total_cases_per_million": 2956.11,
+    "total_deaths": 1931,
+    "total_deaths_per_million": 54.258,
+    "total_vaccinations": 24174309,
+    "Code": "AGO"
+  },
+  {
+    "Entity": "Anguilla",
+    "total_cases": 3904,
+    "total_cases_per_million": 245890.282,
+    "total_deaths": 12,
+    "total_deaths_per_million": 755.81,
+    "total_vaccinations": 24489,
+    "Code": "AIA"
+  },
+  {
+    "Entity": "Antigua and Barbuda",
+    "total_cases": 9106,
+    "total_cases_per_million": 97107.879,
+    "total_deaths": 146,
+    "total_deaths_per_million": 1556.968,
+    "total_vaccinations": null,
+    "Code": "ATG"
+  },
+  {
+    "Entity": "Argentina",
+    "total_cases": 10043308,
+    "total_cases_per_million": 220681.971,
+    "total_deaths": 130458,
+    "total_deaths_per_million": 2866.558,
+    "total_vaccinations": 114548471,
+    "Code": "ARG"
+  },
+  {
+    "Entity": "Armenia",
+    "total_cases": 446819,
+    "total_cases_per_million": 160698.975,
+    "total_deaths": 8721,
+    "total_deaths_per_million": 3136.518,
+    "total_vaccinations": null,
+    "Code": "ARM"
+  },
+  {
+    "Entity": "Aruba",
+    "total_cases": 44026,
+    "total_cases_per_million": 413548.878,
+    "total_deaths": 282,
+    "total_deaths_per_million": 2648.907,
+    "total_vaccinations": 174375,
+    "Code": "ABW"
+  },
+  {
+    "Entity": "Asia",
+    "total_cases": 210401549,
+    "total_cases_per_million": 44563.538,
+    "total_deaths": 1621919,
+    "total_deaths_per_million": 343.526,
+    "total_vaccinations": 8985323611,
+    "Code": "OWID_ASI"
+  },
+  {
+    "Entity": "Australia",
+    "total_cases": 11347698,
+    "total_cases_per_million": 433492.007,
+    "total_deaths": 19265,
+    "total_deaths_per_million": 735.94,
+    "total_vaccinations": null,
+    "Code": "AUS"
+  },
+  {
+    "Entity": "Austria",
+    "total_cases": 5878713,
+    "total_cases_per_million": 657602.334,
+    "total_deaths": 21848,
+    "total_deaths_per_million": 2443.953,
+    "total_vaccinations": null,
+    "Code": "AUT"
+  },
+  {
+    "Entity": "Azerbaijan",
+    "total_cases": 828426,
+    "total_cases_per_million": 79978.737,
+    "total_deaths": 10108,
+    "total_deaths_per_million": 975.857,
+    "total_vaccinations": null,
+    "Code": "AZE"
+  },
+  {
+    "Entity": "Bahamas",
+    "total_cases": 37491,
+    "total_cases_per_million": 91443.917,
+    "total_deaths": 833,
+    "total_deaths_per_million": 2031.762,
+    "total_vaccinations": null,
+    "Code": "BHS"
+  },
+  {
+    "Entity": "Bahrain",
+    "total_cases": 705444,
+    "total_cases_per_million": 479164.7,
+    "total_deaths": 1548,
+    "total_deaths_per_million": 1051.461,
+    "total_vaccinations": null,
+    "Code": "BHR"
+  },
+  {
+    "Entity": "Bangladesh",
+    "total_cases": 2037773,
+    "total_cases_per_million": 11903.828,
+    "total_deaths": 29445,
+    "total_deaths_per_million": 172.006,
+    "total_vaccinations": 354659926,
+    "Code": "BGD"
+  },
+  {
+    "Entity": "Barbados",
+    "total_cases": 106645,
+    "total_cases_per_million": 378649.084,
+    "total_deaths": 575,
+    "total_deaths_per_million": 2041.57,
+    "total_vaccinations": 381633,
+    "Code": "BRB"
+  },
+  {
+    "Entity": "Belarus",
+    "total_cases": 994037,
+    "total_cases_per_million": 104251.871,
+    "total_deaths": 7118,
+    "total_deaths_per_million": 746.516,
+    "total_vaccinations": null,
+    "Code": "BLR"
+  },
+  {
+    "Entity": "Belgium",
+    "total_cases": 4708273,
+    "total_cases_per_million": 403938.238,
+    "total_deaths": 33663,
+    "total_deaths_per_million": 2888.06,
+    "total_vaccinations": 29620722,
+    "Code": "BEL"
+  },
+  {
+    "Entity": "Belize",
+    "total_cases": 70740,
+    "total_cases_per_million": 174543.84,
+    "total_deaths": 688,
+    "total_deaths_per_million": 1697.571,
+    "total_vaccinations": 502178,
+    "Code": "BLZ"
+  },
+  {
+    "Entity": "Benin",
+    "total_cases": 27990,
+    "total_cases_per_million": 2096.18,
+    "total_deaths": 163,
+    "total_deaths_per_million": 12.207,
+    "total_vaccinations": null,
+    "Code": "BEN"
+  },
+  {
+    "Entity": "Bermuda",
+    "total_cases": 18799,
+    "total_cases_per_million": 292787.391,
+    "total_deaths": 160,
+    "total_deaths_per_million": 2491.94,
+    "total_vaccinations": null,
+    "Code": "BMU"
+  },
+  {
+    "Entity": "Bhutan",
+    "total_cases": 62615,
+    "total_cases_per_million": 80023.567,
+    "total_deaths": 21,
+    "total_deaths_per_million": 26.839,
+    "total_vaccinations": null,
+    "Code": "BTN"
+  },
+  {
+    "Entity": "Bolivia",
+    "total_cases": 1192283,
+    "total_cases_per_million": 97535.331,
+    "total_deaths": 22362,
+    "total_deaths_per_million": 1829.335,
+    "total_vaccinations": null,
+    "Code": "BOL"
+  },
+  {
+    "Entity": "Bonaire Sint Eustatius and Saba",
+    "total_cases": 11797,
+    "total_cases_per_million": 436086.056,
+    "total_deaths": 41,
+    "total_deaths_per_million": 1515.6,
+    "total_vaccinations": null,
+    "Code": "BES"
+  },
+  {
+    "Entity": "Bosnia and Herzegovina",
+    "total_cases": 401575,
+    "total_cases_per_million": 124190.9,
+    "total_deaths": 16278,
+    "total_deaths_per_million": 5034.127,
+    "total_vaccinations": null,
+    "Code": "BIH"
+  },
+  {
+    "Entity": "Botswana",
+    "total_cases": 329662,
+    "total_cases_per_million": 125332.472,
+    "total_deaths": 2801,
+    "total_deaths_per_million": 1064.898,
+    "total_vaccinations": 3171667,
+    "Code": "BWA"
+  },
+  {
+    "Entity": "Brazil",
+    "total_cases": 36997328,
+    "total_cases_per_million": 171830.04,
+    "total_deaths": 698382,
+    "total_deaths_per_million": 3243.559,
+    "total_vaccinations": 484988616,
+    "Code": "BRA"
+  },
+  {
+    "Entity": "British Virgin Islands",
+    "total_cases": 7305,
+    "total_cases_per_million": 233148.219,
+    "total_deaths": 64,
+    "total_deaths_per_million": 2042.64,
+    "total_vaccinations": null,
+    "Code": "VGB"
+  },
+  {
+    "Entity": "Brunei",
+    "total_cases": 277992,
+    "total_cases_per_million": 619133.1,
+    "total_deaths": 225,
+    "total_deaths_per_million": 501.111,
+    "total_vaccinations": null,
+    "Code": "BRN"
+  },
+  {
+    "Entity": "Bulgaria",
+    "total_cases": 1296450,
+    "total_cases_per_million": 191161.693,
+    "total_deaths": 38208,
+    "total_deaths_per_million": 5633.774,
+    "total_vaccinations": 4608477,
+    "Code": "BGR"
+  },
+  {
+    "Entity": "Burkina Faso",
+    "total_cases": 22056,
+    "total_cases_per_million": 972.754,
+    "total_deaths": 396,
+    "total_deaths_per_million": 17.465,
+    "total_vaccinations": 5856003,
+    "Code": "BFA"
+  },
+  {
+    "Entity": "Burundi",
+    "total_cases": 53609,
+    "total_cases_per_million": 4159.095,
+    "total_deaths": 38,
+    "total_deaths_per_million": 2.948,
+    "total_vaccinations": 34493,
+    "Code": "BDI"
+  },
+  {
+    "Entity": "Cambodia",
+    "total_cases": 138713,
+    "total_cases_per_million": 8272.557,
+    "total_deaths": 3056,
+    "total_deaths_per_million": 182.254,
+    "total_vaccinations": 46003730,
+    "Code": "KHM"
+  },
+  {
+    "Entity": "Cameroon",
+    "total_cases": 124328,
+    "total_cases_per_million": 4453.879,
+    "total_deaths": 1965,
+    "total_deaths_per_million": 70.393,
+    "total_vaccinations": 4272224,
+    "Code": "CMR"
+  },
+  {
+    "Entity": "Canada",
+    "total_cases": 4595042,
+    "total_cases_per_million": 119493.494,
+    "total_deaths": 51253,
+    "total_deaths_per_million": 1332.828,
+    "total_vaccinations": null,
+    "Code": "CAN"
+  },
+  {
+    "Entity": "Cape Verde",
+    "total_cases": 63240,
+    "total_cases_per_million": 106615.056,
+    "total_deaths": 413,
+    "total_deaths_per_million": 696.268,
+    "total_vaccinations": null,
+    "Code": "CPV"
+  },
+  {
+    "Entity": "Cayman Islands",
+    "total_cases": 31472,
+    "total_cases_per_million": 457961.061,
+    "total_deaths": 37,
+    "total_deaths_per_million": 538.401,
+    "total_vaccinations": null,
+    "Code": "CYM"
+  },
+  {
+    "Entity": "Central African Republic",
+    "total_cases": 15368,
+    "total_cases_per_million": 2754.542,
+    "total_deaths": 113,
+    "total_deaths_per_million": 20.254,
+    "total_vaccinations": null,
+    "Code": "CAF"
+  },
+  {
+    "Entity": "Chad",
+    "total_cases": 7675,
+    "total_cases_per_million": 433.045,
+    "total_deaths": 194,
+    "total_deaths_per_million": 10.946,
+    "total_vaccinations": 6368186,
+    "Code": "TCD"
+  },
+  {
+    "Entity": "Chile",
+    "total_cases": 5154016,
+    "total_cases_per_million": 262909.886,
+    "total_deaths": 64109,
+    "total_deaths_per_million": 3270.244,
+    "total_vaccinations": null,
+    "Code": "CHL"
+  },
+  {
+    "Entity": "China",
+    "total_cases": 2023904,
+    "total_cases_per_million": 1419.4,
+    "total_deaths": 87468,
+    "total_deaths_per_million": 61.343,
+    "total_vaccinations": 3491077000,
+    "Code": "CHN"
+  },
+  {
+    "Entity": "Colombia",
+    "total_cases": 6356468,
+    "total_cases_per_million": 122536.619,
+    "total_deaths": 142296,
+    "total_deaths_per_million": 2743.107,
+    "total_vaccinations": null,
+    "Code": "COL"
+  },
+  {
+    "Entity": "Comoros",
+    "total_cases": 8998,
+    "total_cases_per_million": 10753.087,
+    "total_deaths": 161,
+    "total_deaths_per_million": 192.404,
+    "total_vaccinations": null,
+    "Code": "COM"
+  },
+  {
+    "Entity": "Congo",
+    "total_cases": 25077,
+    "total_cases_per_million": 4200.2,
+    "total_deaths": 388,
+    "total_deaths_per_million": 64.987,
+    "total_vaccinations": null,
+    "Code": "COG"
+  },
+  {
+    "Entity": "Cook Islands",
+    "total_cases": 7020,
+    "total_cases_per_million": 412165.336,
+    "total_deaths": 2,
+    "total_deaths_per_million": 117.426,
+    "total_vaccinations": 40854,
+    "Code": "COK"
+  },
+  {
+    "Entity": "Costa Rica",
+    "total_cases": 1199055,
+    "total_cases_per_million": 231440.447,
+    "total_deaths": 9214,
+    "total_deaths_per_million": 1778.477,
+    "total_vaccinations": null,
+    "Code": "CRI"
+  },
+  {
+    "Entity": "Cote d'Ivoire",
+    "total_cases": 88138,
+    "total_cases_per_million": 3129.84,
+    "total_deaths": 834,
+    "total_deaths_per_million": 29.616,
+    "total_vaccinations": 25263932,
+    "Code": "CIV"
+  },
+  {
+    "Entity": "Croatia",
+    "total_cases": 1268666,
+    "total_cases_per_million": 314777.262,
+    "total_deaths": 17950,
+    "total_deaths_per_million": 4453.695,
+    "total_vaccinations": 5360084,
+    "Code": "HRV"
+  },
+  {
+    "Entity": "Cuba",
+    "total_cases": 1112561,
+    "total_cases_per_million": 99227.734,
+    "total_deaths": 8530,
+    "total_deaths_per_million": 760.779,
+    "total_vaccinations": 43614510,
+    "Code": "CUB"
+  },
+  {
+    "Entity": "Curacao",
+    "total_cases": 45986,
+    "total_cases_per_million": 240546.521,
+    "total_deaths": 301,
+    "total_deaths_per_million": 1574.49,
+    "total_vaccinations": null,
+    "Code": "CUW"
+  },
+  {
+    "Entity": "Cyprus",
+    "total_cases": 647031,
+    "total_cases_per_million": 722127.171,
+    "total_deaths": 1297,
+    "total_deaths_per_million": 1447.533,
+    "total_vaccinations": null,
+    "Code": "CYP"
+  },
+  {
+    "Entity": "Czechia",
+    "total_cases": 4604427,
+    "total_cases_per_million": 438768,
+    "total_deaths": 42397,
+    "total_deaths_per_million": 4040.122,
+    "total_vaccinations": 18615864,
+    "Code": "CZE"
+  },
+  {
+    "Entity": "Democratic Republic of Congo",
+    "total_cases": 95646,
+    "total_cases_per_million": 966.022,
+    "total_deaths": 1464,
+    "total_deaths_per_million": 14.786,
+    "total_vaccinations": 12474117,
+    "Code": "COD"
+  },
+  {
+    "Entity": "Denmark",
+    "total_cases": 3402710,
+    "total_cases_per_million": 578469.938,
+    "total_deaths": 8239,
+    "total_deaths_per_million": 1400.652,
+    "total_vaccinations": 13145167,
+    "Code": "DNK"
+  },
+  {
+    "Entity": "Djibouti",
+    "total_cases": 15690,
+    "total_cases_per_million": 13998.292,
+    "total_deaths": 189,
+    "total_deaths_per_million": 168.622,
+    "total_vaccinations": 385621,
+    "Code": "DJI"
+  },
+  {
+    "Entity": "Dominica",
+    "total_cases": 15760,
+    "total_cases_per_million": 216608.483,
+    "total_deaths": 74,
+    "total_deaths_per_million": 1017.07,
+    "total_vaccinations": null,
+    "Code": "DMA"
+  },
+  {
+    "Entity": "Dominican Republic",
+    "total_cases": 660533,
+    "total_cases_per_million": 58824.787,
+    "total_deaths": 4384,
+    "total_deaths_per_million": 390.424,
+    "total_vaccinations": 16229237,
+    "Code": "DOM"
+  },
+  {
+    "Entity": "Ecuador",
+    "total_cases": 1056578,
+    "total_cases_per_million": 58695.51,
+    "total_deaths": 36008,
+    "total_deaths_per_million": 2000.333,
+    "total_vaccinations": 39485025,
+    "Code": "ECU"
+  },
+  {
+    "Entity": "Egypt",
+    "total_cases": 515698,
+    "total_cases_per_million": 4646.342,
+    "total_deaths": 24809,
+    "total_deaths_per_million": 223.524,
+    "total_vaccinations": 104508139,
+    "Code": "EGY"
+  },
+  {
+    "Entity": "El Salvador",
+    "total_cases": 201785,
+    "total_cases_per_million": 31845.405,
+    "total_deaths": 4230,
+    "total_deaths_per_million": 667.572,
+    "total_vaccinations": null,
+    "Code": "SLV"
+  },
+  {
+    "Entity": "England",
+    "total_cases": null,
+    "total_cases_per_million": null,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": 144754288,
+    "Code": "OWID_ENG"
+  },
+  {
+    "Entity": "Equatorial Guinea",
+    "total_cases": 17229,
+    "total_cases_per_million": 10286.486,
+    "total_deaths": 183,
+    "total_deaths_per_million": 109.259,
+    "total_vaccinations": null,
+    "Code": "GNQ"
+  },
+  {
+    "Entity": "Eritrea",
+    "total_cases": 10189,
+    "total_cases_per_million": 2765.713,
+    "total_deaths": 103,
+    "total_deaths_per_million": 27.958,
+    "total_vaccinations": null,
+    "Code": "ERI"
+  },
+  {
+    "Entity": "Estonia",
+    "total_cases": 614852,
+    "total_cases_per_million": 463666.912,
+    "total_deaths": 2934,
+    "total_deaths_per_million": 2212.563,
+    "total_vaccinations": 2109343,
+    "Code": "EST"
+  },
+  {
+    "Entity": "Eswatini",
+    "total_cases": 74199,
+    "total_cases_per_million": 61746.056,
+    "total_deaths": 1423,
+    "total_deaths_per_million": 1184.175,
+    "total_vaccinations": 830376,
+    "Code": "SWZ"
+  },
+  {
+    "Entity": "Ethiopia",
+    "total_cases": 499903,
+    "total_cases_per_million": 4051.737,
+    "total_deaths": 7572,
+    "total_deaths_per_million": 61.371,
+    "total_vaccinations": null,
+    "Code": "ETH"
+  },
+  {
+    "Entity": "Europe",
+    "total_cases": 247611013,
+    "total_cases_per_million": 332449.542,
+    "total_deaths": 2030597,
+    "total_deaths_per_million": 2726.337,
+    "total_vaccinations": 1376658873,
+    "Code": "OWID_EUR"
+  },
+  {
+    "Entity": "European Union",
+    "total_cases": 183653481,
+    "total_cases_per_million": 407985.759,
+    "total_deaths": 1212413,
+    "total_deaths_per_million": 2693.373,
+    "total_vaccinations": 937761917,
+    "Code": "OWID_EUN"
+  },
+  {
+    "Entity": "Faeroe Islands",
+    "total_cases": 34658,
+    "total_cases_per_million": 652484.139,
+    "total_deaths": 28,
+    "total_deaths_per_million": 527.138,
+    "total_vaccinations": null,
+    "Code": "FRO"
+  },
+  {
+    "Entity": "Falkland Islands",
+    "total_cases": 1930,
+    "total_cases_per_million": 507761.115,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": null,
+    "Code": "FLK"
+  },
+  {
+    "Entity": "Fiji",
+    "total_cases": 68876,
+    "total_cases_per_million": 74078.615,
+    "total_deaths": 883,
+    "total_deaths_per_million": 949.698,
+    "total_vaccinations": 1552809,
+    "Code": "FJI"
+  },
+  {
+    "Entity": "Finland",
+    "total_cases": 1461583,
+    "total_cases_per_million": 263788.173,
+    "total_deaths": 8859,
+    "total_deaths_per_million": 1598.882,
+    "total_vaccinations": 13196843,
+    "Code": "FIN"
+  },
+  {
+    "Entity": "France",
+    "total_cases": 39640649,
+    "total_cases_per_million": 584558.256,
+    "total_deaths": 164898,
+    "total_deaths_per_million": 2431.658,
+    "total_vaccinations": 154284734,
+    "Code": "FRA"
+  },
+  {
+    "Entity": "French Polynesia",
+    "total_cases": 77957,
+    "total_cases_per_million": 254518.564,
+    "total_deaths": 649,
+    "total_deaths_per_million": 2118.893,
+    "total_vaccinations": null,
+    "Code": "PYF"
+  },
+  {
+    "Entity": "Gabon",
+    "total_cases": 48981,
+    "total_cases_per_million": 20502.747,
+    "total_deaths": 306,
+    "total_deaths_per_million": 128.087,
+    "total_vaccinations": null,
+    "Code": "GAB"
+  },
+  {
+    "Entity": "Gambia",
+    "total_cases": 12586,
+    "total_cases_per_million": 4651.154,
+    "total_deaths": 372,
+    "total_deaths_per_million": 137.473,
+    "total_vaccinations": null,
+    "Code": "GMB"
+  },
+  {
+    "Entity": "Georgia",
+    "total_cases": 1825598,
+    "total_cases_per_million": 487556.167,
+    "total_deaths": 16965,
+    "total_deaths_per_million": 4530.784,
+    "total_vaccinations": null,
+    "Code": "GEO"
+  },
+  {
+    "Entity": "Germany",
+    "total_cases": 38068912,
+    "total_cases_per_million": 456626.905,
+    "total_deaths": 167604,
+    "total_deaths_per_million": 2010.367,
+    "total_vaccinations": 192085880,
+    "Code": "DEU"
+  },
+  {
+    "Entity": "Ghana",
+    "total_cases": 171167,
+    "total_cases_per_million": 5113.146,
+    "total_deaths": 1462,
+    "total_deaths_per_million": 43.673,
+    "total_vaccinations": null,
+    "Code": "GHA"
+  },
+  {
+    "Entity": "Gibraltar",
+    "total_cases": 20420,
+    "total_cases_per_million": 624904.367,
+    "total_deaths": 111,
+    "total_deaths_per_million": 3396.885,
+    "total_vaccinations": null,
+    "Code": "GIB"
+  },
+  {
+    "Entity": "Greece",
+    "total_cases": 5548487,
+    "total_cases_per_million": 534280.401,
+    "total_deaths": 34779,
+    "total_deaths_per_million": 3348.974,
+    "total_vaccinations": 22107768,
+    "Code": "GRC"
+  },
+  {
+    "Entity": "Greenland",
+    "total_cases": 11971,
+    "total_cases_per_million": 211898.609,
+    "total_deaths": 21,
+    "total_deaths_per_million": 371.721,
+    "total_vaccinations": null,
+    "Code": "GRL"
+  },
+  {
+    "Entity": "Grenada",
+    "total_cases": 19680,
+    "total_cases_per_million": 156863.995,
+    "total_deaths": 238,
+    "total_deaths_per_million": 1897.034,
+    "total_vaccinations": null,
+    "Code": "GRD"
+  },
+  {
+    "Entity": "Guatemala",
+    "total_cases": 1234843,
+    "total_cases_per_million": 69202.474,
+    "total_deaths": 20160,
+    "total_deaths_per_million": 1129.797,
+    "total_vaccinations": 20187207,
+    "Code": "GTM"
+  },
+  {
+    "Entity": "Guinea",
+    "total_cases": 38267,
+    "total_cases_per_million": 2761.096,
+    "total_deaths": 467,
+    "total_deaths_per_million": 33.696,
+    "total_vaccinations": 9857575,
+    "Code": "GIN"
+  },
+  {
+    "Entity": "Guinea-Bissau",
+    "total_cases": 8953,
+    "total_cases_per_million": 4252.035,
+    "total_deaths": 176,
+    "total_deaths_per_million": 83.587,
+    "total_vaccinations": null,
+    "Code": "GNB"
+  },
+  {
+    "Entity": "Guyana",
+    "total_cases": 73062,
+    "total_cases_per_million": 90341.982,
+    "total_deaths": 1298,
+    "total_deaths_per_million": 1604.992,
+    "total_vaccinations": 960133,
+    "Code": "GUY"
+  },
+  {
+    "Entity": "Haiti",
+    "total_cases": 34143,
+    "total_cases_per_million": 2947.172,
+    "total_deaths": 860,
+    "total_deaths_per_million": 74.234,
+    "total_vaccinations": null,
+    "Code": "HTI"
+  },
+  {
+    "Entity": "High income",
+    "total_cases": 430320114,
+    "total_cases_per_million": 344114.426,
+    "total_deaths": 2865643,
+    "total_deaths_per_million": 2291.571,
+    "total_vaccinations": 2799996205,
+    "Code": "OWID_HIC"
+  },
+  {
+    "Entity": "Honduras",
+    "total_cases": 471557,
+    "total_cases_per_million": 45199.216,
+    "total_deaths": 11109,
+    "total_deaths_per_million": 1064.809,
+    "total_vaccinations": 17101012,
+    "Code": "HND"
+  },
+  {
+    "Entity": "Hong Kong",
+    "total_cases": 2876106,
+    "total_cases_per_million": 384051.09,
+    "total_deaths": 13447,
+    "total_deaths_per_million": 1795.6,
+    "total_vaccinations": 20681138,
+    "Code": "HKG"
+  },
+  {
+    "Entity": "Hungary",
+    "total_cases": 2194969,
+    "total_cases_per_million": 220216.921,
+    "total_deaths": 48745,
+    "total_deaths_per_million": 4890.49,
+    "total_vaccinations": null,
+    "Code": "HUN"
+  },
+  {
+    "Entity": "Iceland",
+    "total_cases": 208999,
+    "total_cases_per_million": 560464.786,
+    "total_deaths": 211,
+    "total_deaths_per_million": 565.831,
+    "total_vaccinations": null,
+    "Code": "ISL"
+  },
+  {
+    "Entity": "India",
+    "total_cases": 44686676,
+    "total_cases_per_million": 31532.263,
+    "total_deaths": 530763,
+    "total_deaths_per_million": 374.522,
+    "total_vaccinations": 2206327329,
+    "Code": "IND"
+  },
+  {
+    "Entity": "Indonesia",
+    "total_cases": 6734818,
+    "total_cases_per_million": 24445.681,
+    "total_deaths": 160894,
+    "total_deaths_per_million": 584.004,
+    "total_vaccinations": null,
+    "Code": "IDN"
+  },
+  {
+    "Entity": "International",
+    "total_cases": 721,
+    "total_cases_per_million": null,
+    "total_deaths": 15,
+    "total_deaths_per_million": null,
+    "total_vaccinations": null,
+    "Code": "OWID_INT"
+  },
+  {
+    "Entity": "Iran",
+    "total_cases": 7567421,
+    "total_cases_per_million": 85458.752,
+    "total_deaths": 144824,
+    "total_deaths_per_million": 1635.495,
+    "total_vaccinations": 157785811,
+    "Code": "IRN"
+  },
+  {
+    "Entity": "Iraq",
+    "total_cases": 2465545,
+    "total_cases_per_million": 55410.332,
+    "total_deaths": 25375,
+    "total_deaths_per_million": 570.274,
+    "total_vaccinations": null,
+    "Code": "IRQ"
+  },
+  {
+    "Entity": "Ireland",
+    "total_cases": 1703244,
+    "total_cases_per_million": 339081.7,
+    "total_deaths": 8655,
+    "total_deaths_per_million": 1723.037,
+    "total_vaccinations": 11110555,
+    "Code": "IRL"
+  },
+  {
+    "Entity": "Isle of Man",
+    "total_cases": 38008,
+    "total_cases_per_million": 449617.905,
+    "total_deaths": 116,
+    "total_deaths_per_million": 1372.229,
+    "total_vaccinations": null,
+    "Code": "IMN"
+  },
+  {
+    "Entity": "Israel",
+    "total_cases": 4795878,
+    "total_cases_per_million": 507554.027,
+    "total_deaths": 12256,
+    "total_deaths_per_million": 1297.068,
+    "total_vaccinations": 18641701,
+    "Code": "ISR"
+  },
+  {
+    "Entity": "Italy",
+    "total_cases": 25547414,
+    "total_cases_per_million": 432732.181,
+    "total_deaths": 187850,
+    "total_deaths_per_million": 3181.877,
+    "total_vaccinations": 143751231,
+    "Code": "ITA"
+  },
+  {
+    "Entity": "Jamaica",
+    "total_cases": 154065,
+    "total_cases_per_million": 54490.338,
+    "total_deaths": 3500,
+    "total_deaths_per_million": 1237.894,
+    "total_vaccinations": null,
+    "Code": "JAM"
+  },
+  {
+    "Entity": "Japan",
+    "total_cases": 33158158,
+    "total_cases_per_million": 267508.708,
+    "total_deaths": 71931,
+    "total_deaths_per_million": 580.315,
+    "total_vaccinations": 381581415,
+    "Code": "JPN"
+  },
+  {
+    "Entity": "Jordan",
+    "total_cases": 1746997,
+    "total_cases_per_million": 154794.998,
+    "total_deaths": 14122,
+    "total_deaths_per_million": 1251.299,
+    "total_vaccinations": null,
+    "Code": "JOR"
+  },
+  {
+    "Entity": "Kazakhstan",
+    "total_cases": 1497449,
+    "total_cases_per_million": 77196.059,
+    "total_deaths": 19068,
+    "total_deaths_per_million": 982.988,
+    "total_vaccinations": null,
+    "Code": "KAZ"
+  },
+  {
+    "Entity": "Kenya",
+    "total_cases": 342900,
+    "total_cases_per_million": 6346.77,
+    "total_deaths": 5688,
+    "total_deaths_per_million": 105.28,
+    "total_vaccinations": 23359310,
+    "Code": "KEN"
+  },
+  {
+    "Entity": "Kiribati",
+    "total_cases": 5013,
+    "total_cases_per_million": 38198.069,
+    "total_deaths": 18,
+    "total_deaths_per_million": 137.156,
+    "total_vaccinations": 219980,
+    "Code": "KIR"
+  },
+  {
+    "Entity": "Kosovo",
+    "total_cases": 272905,
+    "total_cases_per_million": 153135.46,
+    "total_deaths": 3207,
+    "total_deaths_per_million": 1799.547,
+    "total_vaccinations": 1837446,
+    "Code": "OWID_KOS"
+  },
+  {
+    "Entity": "Kuwait",
+    "total_cases": 663456,
+    "total_cases_per_million": 155416.659,
+    "total_deaths": 2570,
+    "total_deaths_per_million": 602.031,
+    "total_vaccinations": 8258614,
+    "Code": "KWT"
+  },
+  {
+    "Entity": "Kyrgyzstan",
+    "total_cases": 206633,
+    "total_cases_per_million": 31163.446,
+    "total_deaths": 2991,
+    "total_deaths_per_million": 451.089,
+    "total_vaccinations": 3425209,
+    "Code": "KGZ"
+  },
+  {
+    "Entity": "Laos",
+    "total_cases": 218014,
+    "total_cases_per_million": 28954.734,
+    "total_deaths": 758,
+    "total_deaths_per_million": 100.671,
+    "total_vaccinations": null,
+    "Code": "LAO"
+  },
+  {
+    "Entity": "Latvia",
+    "total_cases": 975884,
+    "total_cases_per_million": 527318.451,
+    "total_deaths": 6258,
+    "total_deaths_per_million": 3381.507,
+    "total_vaccinations": null,
+    "Code": "LVA"
+  },
+  {
+    "Entity": "Lebanon",
+    "total_cases": 1231303,
+    "total_cases_per_million": 224291.515,
+    "total_deaths": 10821,
+    "total_deaths_per_million": 1971.13,
+    "total_vaccinations": null,
+    "Code": "LBN"
+  },
+  {
+    "Entity": "Lesotho",
+    "total_cases": 34790,
+    "total_cases_per_million": 15087.869,
+    "total_deaths": 723,
+    "total_deaths_per_million": 313.554,
+    "total_vaccinations": 1319497,
+    "Code": "LSO"
+  },
+  {
+    "Entity": "Liberia",
+    "total_cases": 8065,
+    "total_cases_per_million": 1520.926,
+    "total_deaths": 294,
+    "total_deaths_per_million": 55.444,
+    "total_vaccinations": null,
+    "Code": "LBR"
+  },
+  {
+    "Entity": "Libya",
+    "total_cases": 507171,
+    "total_cases_per_million": 74448.824,
+    "total_deaths": 6437,
+    "total_deaths_per_million": 944.902,
+    "total_vaccinations": null,
+    "Code": "LBY"
+  },
+  {
+    "Entity": "Liechtenstein",
+    "total_cases": 21387,
+    "total_cases_per_million": 543437.937,
+    "total_deaths": 89,
+    "total_deaths_per_million": 2261.466,
+    "total_vaccinations": 74288,
+    "Code": "LIE"
+  },
+  {
+    "Entity": "Lithuania",
+    "total_cases": 1303028,
+    "total_cases_per_million": 473818.37,
+    "total_deaths": 9578,
+    "total_deaths_per_million": 3482.836,
+    "total_vaccinations": 4544224,
+    "Code": "LTU"
+  },
+  {
+    "Entity": "Low income",
+    "total_cases": 2286094,
+    "total_cases_per_million": 3099.348,
+    "total_deaths": 47900,
+    "total_deaths_per_million": 64.94,
+    "total_vaccinations": 272291300,
+    "Code": "OWID_LIC"
+  },
+  {
+    "Entity": "Lower middle income",
+    "total_cases": 97135095,
+    "total_cases_per_million": 28301.964,
+    "total_deaths": 1345793,
+    "total_deaths_per_million": 392.12,
+    "total_vaccinations": 4829656651,
+    "Code": "OWID_LMC"
+  },
+  {
+    "Entity": "Luxembourg",
+    "total_cases": 315945,
+    "total_cases_per_million": 487869.846,
+    "total_deaths": 1215,
+    "total_deaths_per_million": 1876.155,
+    "total_vaccinations": 1374048,
+    "Code": "LUX"
+  },
+  {
+    "Entity": "Macao",
+    "total_cases": 3513,
+    "total_cases_per_million": 5053.367,
+    "total_deaths": 121,
+    "total_deaths_per_million": 174.056,
+    "total_vaccinations": 1797075,
+    "Code": "MAC"
+  },
+  {
+    "Entity": "Madagascar",
+    "total_cases": 67852,
+    "total_cases_per_million": 2291.39,
+    "total_deaths": 1421,
+    "total_deaths_per_million": 47.988,
+    "total_vaccinations": 2652348,
+    "Code": "MDG"
+  },
+  {
+    "Entity": "Malawi",
+    "total_cases": 88681,
+    "total_cases_per_million": 4345.975,
+    "total_deaths": 2686,
+    "total_deaths_per_million": 131.632,
+    "total_vaccinations": 7159342,
+    "Code": "MWI"
+  },
+  {
+    "Entity": "Malaysia",
+    "total_cases": 5041587,
+    "total_cases_per_million": 148551.916,
+    "total_deaths": 36957,
+    "total_deaths_per_million": 1088.949,
+    "total_vaccinations": 72569915,
+    "Code": "MYS"
+  },
+  {
+    "Entity": "Maldives",
+    "total_cases": 185729,
+    "total_cases_per_million": 354581.346,
+    "total_deaths": 311,
+    "total_deaths_per_million": 593.74,
+    "total_vaccinations": 951511,
+    "Code": "MDV"
+  },
+  {
+    "Entity": "Mali",
+    "total_cases": 32963,
+    "total_cases_per_million": 1458.953,
+    "total_deaths": 743,
+    "total_deaths_per_million": 32.885,
+    "total_vaccinations": 4792566,
+    "Code": "MLI"
+  },
+  {
+    "Entity": "Malta",
+    "total_cases": 117338,
+    "total_cases_per_million": 220025.389,
+    "total_deaths": 827,
+    "total_deaths_per_million": 1550.742,
+    "total_vaccinations": 1380226,
+    "Code": "MLT"
+  },
+  {
+    "Entity": "Marshall Islands",
+    "total_cases": 15598,
+    "total_cases_per_million": 375015.027,
+    "total_deaths": 17,
+    "total_deaths_per_million": 408.723,
+    "total_vaccinations": null,
+    "Code": "MHL"
+  },
+  {
+    "Entity": "Mauritania",
+    "total_cases": 63667,
+    "total_cases_per_million": 13442.787,
+    "total_deaths": 997,
+    "total_deaths_per_million": 210.509,
+    "total_vaccinations": 4066473,
+    "Code": "MRT"
+  },
+  {
+    "Entity": "Mauritius",
+    "total_cases": 295440,
+    "total_cases_per_million": 227352.829,
+    "total_deaths": 1044,
+    "total_deaths_per_million": 803.4,
+    "total_vaccinations": 2614136,
+    "Code": "MUS"
+  },
+  {
+    "Entity": "Mexico",
+    "total_cases": 7435066,
+    "total_cases_per_million": 58312.359,
+    "total_deaths": 332885,
+    "total_deaths_per_million": 2610.778,
+    "total_vaccinations": null,
+    "Code": "MEX"
+  },
+  {
+    "Entity": "Micronesia (country)",
+    "total_cases": 23671,
+    "total_cases_per_million": 207316.646,
+    "total_deaths": 60,
+    "total_deaths_per_million": 525.495,
+    "total_vaccinations": null,
+    "Code": "FSM"
+  },
+  {
+    "Entity": "Moldova",
+    "total_cases": 603750,
+    "total_cases_per_million": 184464.189,
+    "total_deaths": 11974,
+    "total_deaths_per_million": 3658.425,
+    "total_vaccinations": null,
+    "Code": "MDA"
+  },
+  {
+    "Entity": "Monaco",
+    "total_cases": 16108,
+    "total_cases_per_million": 441423.913,
+    "total_deaths": 67,
+    "total_deaths_per_million": 1836.069,
+    "total_vaccinations": null,
+    "Code": "MCO"
+  },
+  {
+    "Entity": "Mongolia",
+    "total_cases": 1007896,
+    "total_cases_per_million": 296581.923,
+    "total_deaths": 2136,
+    "total_deaths_per_million": 628.536,
+    "total_vaccinations": null,
+    "Code": "MNG"
+  },
+  {
+    "Entity": "Montenegro",
+    "total_cases": 287772,
+    "total_cases_per_million": 458906.491,
+    "total_deaths": 2800,
+    "total_deaths_per_million": 4465.126,
+    "total_vaccinations": null,
+    "Code": "MNE"
+  },
+  {
+    "Entity": "Montserrat",
+    "total_cases": 1403,
+    "total_cases_per_million": 317924.315,
+    "total_deaths": 8,
+    "total_deaths_per_million": 1812.826,
+    "total_vaccinations": null,
+    "Code": "MSR"
+  },
+  {
+    "Entity": "Morocco",
+    "total_cases": 1272411,
+    "total_cases_per_million": 33969.027,
+    "total_deaths": 16296,
+    "total_deaths_per_million": 435.048,
+    "total_vaccinations": 55380717,
+    "Code": "MAR"
+  },
+  {
+    "Entity": "Mozambique",
+    "total_cases": 233098,
+    "total_cases_per_million": 7070.106,
+    "total_deaths": 2242,
+    "total_deaths_per_million": 68.002,
+    "total_vaccinations": null,
+    "Code": "MOZ"
+  },
+  {
+    "Entity": "Myanmar",
+    "total_cases": 633903,
+    "total_cases_per_million": 11700.093,
+    "total_deaths": 19490,
+    "total_deaths_per_million": 359.731,
+    "total_vaccinations": null,
+    "Code": "MMR"
+  },
+  {
+    "Entity": "Namibia",
+    "total_cases": 171121,
+    "total_cases_per_million": 66661.239,
+    "total_deaths": 4090,
+    "total_deaths_per_million": 1593.285,
+    "total_vaccinations": 981339,
+    "Code": "NAM"
+  },
+  {
+    "Entity": "Nauru",
+    "total_cases": 5247,
+    "total_cases_per_million": 413442.597,
+    "total_deaths": 1,
+    "total_deaths_per_million": 78.796,
+    "total_vaccinations": 32157,
+    "Code": "NRU"
+  },
+  {
+    "Entity": "Nepal",
+    "total_cases": 1001137,
+    "total_cases_per_million": 32773.032,
+    "total_deaths": 12020,
+    "total_deaths_per_million": 393.484,
+    "total_vaccinations": 60976433,
+    "Code": "NPL"
+  },
+  {
+    "Entity": "Netherlands",
+    "total_cases": 8602598,
+    "total_cases_per_million": 489785.254,
+    "total_deaths": 23081,
+    "total_deaths_per_million": 1314.107,
+    "total_vaccinations": null,
+    "Code": "NLD"
+  },
+  {
+    "Entity": "New Caledonia",
+    "total_cases": 80007,
+    "total_cases_per_million": 275925.217,
+    "total_deaths": 314,
+    "total_deaths_per_million": 1082.912,
+    "total_vaccinations": 479745,
+    "Code": "NCL"
+  },
+  {
+    "Entity": "New Zealand",
+    "total_cases": 2208558,
+    "total_cases_per_million": 425927.658,
+    "total_deaths": 2534,
+    "total_deaths_per_million": 488.69,
+    "total_vaccinations": null,
+    "Code": "NZL"
+  },
+  {
+    "Entity": "Nicaragua",
+    "total_cases": 15627,
+    "total_cases_per_million": 2249.009,
+    "total_deaths": 245,
+    "total_deaths_per_million": 35.26,
+    "total_vaccinations": 12241350,
+    "Code": "NIC"
+  },
+  {
+    "Entity": "Niger",
+    "total_cases": 9508,
+    "total_cases_per_million": 362.79,
+    "total_deaths": 315,
+    "total_deaths_per_million": 12.019,
+    "total_vaccinations": null,
+    "Code": "NER"
+  },
+  {
+    "Entity": "Nigeria",
+    "total_cases": 266463,
+    "total_cases_per_million": 1219.28,
+    "total_deaths": 3155,
+    "total_deaths_per_million": 14.437,
+    "total_vaccinations": null,
+    "Code": "NGA"
+  },
+  {
+    "Entity": "North America",
+    "total_cases": 122131197,
+    "total_cases_per_million": 203442.252,
+    "total_deaths": 1582126,
+    "total_deaths_per_million": 2635.455,
+    "total_vaccinations": 1141657991,
+    "Code": "OWID_NAM"
+  },
+  {
+    "Entity": "North Korea",
+    "total_cases": 1,
+    "total_cases_per_million": 0.038,
+    "total_deaths": 6,
+    "total_deaths_per_million": 0.23,
+    "total_vaccinations": null,
+    "Code": "PRK"
+  },
+  {
+    "Entity": "North Macedonia",
+    "total_cases": 346733,
+    "total_cases_per_million": 165615.211,
+    "total_deaths": 9653,
+    "total_deaths_per_million": 4610.705,
+    "total_vaccinations": null,
+    "Code": "MKD"
+  },
+  {
+    "Entity": "Northern Ireland",
+    "total_cases": null,
+    "total_cases_per_million": null,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": 4483438,
+    "Code": "OWID_NIR"
+  },
+  {
+    "Entity": "Norway",
+    "total_cases": 1478767,
+    "total_cases_per_million": 272116.09,
+    "total_deaths": 5175,
+    "total_deaths_per_million": 952.28,
+    "total_vaccinations": null,
+    "Code": "NOR"
+  },
+  {
+    "Entity": "Oceania",
+    "total_cases": 13968654,
+    "total_cases_per_million": 310146.704,
+    "total_deaths": 24638,
+    "total_deaths_per_million": 547.039,
+    "total_vaccinations": 80906940,
+    "Code": "OWID_OCE"
+  },
+  {
+    "Entity": "Oman",
+    "total_cases": 399449,
+    "total_cases_per_million": 87286.454,
+    "total_deaths": 4628,
+    "total_deaths_per_million": 1011.297,
+    "total_vaccinations": null,
+    "Code": "OMN"
+  },
+  {
+    "Entity": "Pakistan",
+    "total_cases": 1576736,
+    "total_cases_per_million": 6686.046,
+    "total_deaths": 30641,
+    "total_deaths_per_million": 129.931,
+    "total_vaccinations": null,
+    "Code": "PAK"
+  },
+  {
+    "Entity": "Palau",
+    "total_cases": 5988,
+    "total_cases_per_million": 331121.433,
+    "total_deaths": 9,
+    "total_deaths_per_million": 497.678,
+    "total_vaccinations": null,
+    "Code": "PLW"
+  },
+  {
+    "Entity": "Palestine",
+    "total_cases": 703228,
+    "total_cases_per_million": 133946.251,
+    "total_deaths": 5708,
+    "total_deaths_per_million": 1087.222,
+    "total_vaccinations": null,
+    "Code": "PSE"
+  },
+  {
+    "Entity": "Panama",
+    "total_cases": 1030658,
+    "total_cases_per_million": 233784.469,
+    "total_deaths": 8600,
+    "total_deaths_per_million": 1950.741,
+    "total_vaccinations": 8756680,
+    "Code": "PAN"
+  },
+  {
+    "Entity": "Papua New Guinea",
+    "total_cases": 46792,
+    "total_cases_per_million": 4613.401,
+    "total_deaths": 670,
+    "total_deaths_per_million": 66.058,
+    "total_vaccinations": 717736,
+    "Code": "PNG"
+  },
+  {
+    "Entity": "Paraguay",
+    "total_cases": 807453,
+    "total_cases_per_million": 119080.278,
+    "total_deaths": 19849,
+    "total_deaths_per_million": 2927.259,
+    "total_vaccinations": 9568675,
+    "Code": "PRY"
+  },
+  {
+    "Entity": "Peru",
+    "total_cases": 4484903,
+    "total_cases_per_million": 131716.807,
+    "total_deaths": 219365,
+    "total_deaths_per_million": 6442.516,
+    "total_vaccinations": 87754399,
+    "Code": "PER"
+  },
+  {
+    "Entity": "Philippines",
+    "total_cases": 4075757,
+    "total_cases_per_million": 35269.92,
+    "total_deaths": 66051,
+    "total_deaths_per_million": 571.578,
+    "total_vaccinations": 170366733,
+    "Code": "PHL"
+  },
+  {
+    "Entity": "Poland",
+    "total_cases": 6406799,
+    "total_cases_per_million": 160744.056,
+    "total_deaths": 118840,
+    "total_deaths_per_million": 2981.649,
+    "total_vaccinations": 57903994,
+    "Code": "POL"
+  },
+  {
+    "Entity": "Portugal",
+    "total_cases": 5566708,
+    "total_cases_per_million": 541990.605,
+    "total_deaths": 26117,
+    "total_deaths_per_million": 2542.826,
+    "total_vaccinations": 28106464,
+    "Code": "PRT"
+  },
+  {
+    "Entity": "Qatar",
+    "total_cases": 493639,
+    "total_cases_per_million": 183159.557,
+    "total_deaths": 686,
+    "total_deaths_per_million": 254.533,
+    "total_vaccinations": 7606840,
+    "Code": "QAT"
+  },
+  {
+    "Entity": "Romania",
+    "total_cases": 3335131,
+    "total_cases_per_million": 169646.737,
+    "total_deaths": 67675,
+    "total_deaths_per_million": 3442.396,
+    "total_vaccinations": null,
+    "Code": "ROU"
+  },
+  {
+    "Entity": "Russia",
+    "total_cases": 21892777,
+    "total_cases_per_million": 151283.781,
+    "total_deaths": 387932,
+    "total_deaths_per_million": 2680.693,
+    "total_vaccinations": 185641260,
+    "Code": "RUS"
+  },
+  {
+    "Entity": "Rwanda",
+    "total_cases": 133170,
+    "total_cases_per_million": 9666.319,
+    "total_deaths": 1468,
+    "total_deaths_per_million": 106.557,
+    "total_vaccinations": null,
+    "Code": "RWA"
+  },
+  {
+    "Entity": "Saint Helena",
+    "total_cases": 2166,
+    "total_cases_per_million": 401036.845,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": null,
+    "Code": "SHN"
+  },
+  {
+    "Entity": "Saint Kitts and Nevis",
+    "total_cases": 6596,
+    "total_cases_per_million": 138336.025,
+    "total_deaths": 46,
+    "total_deaths_per_million": 964.745,
+    "total_vaccinations": null,
+    "Code": "KNA"
+  },
+  {
+    "Entity": "Saint Lucia",
+    "total_cases": 29882,
+    "total_cases_per_million": 166129.247,
+    "total_deaths": 409,
+    "total_deaths_per_million": 2273.839,
+    "total_vaccinations": null,
+    "Code": "LCA"
+  },
+  {
+    "Entity": "Saint Pierre and Miquelon",
+    "total_cases": 3452,
+    "total_cases_per_million": 586576.041,
+    "total_deaths": 2,
+    "total_deaths_per_million": 339.847,
+    "total_vaccinations": null,
+    "Code": "SPM"
+  },
+  {
+    "Entity": "Saint Vincent and the Grenadines",
+    "total_cases": 9589,
+    "total_cases_per_million": 92238.286,
+    "total_deaths": 123,
+    "total_deaths_per_million": 1183.159,
+    "total_vaccinations": 73374,
+    "Code": "VCT"
+  },
+  {
+    "Entity": "Samoa",
+    "total_cases": 16607,
+    "total_cases_per_million": 74675.12,
+    "total_deaths": 29,
+    "total_deaths_per_million": 130.402,
+    "total_vaccinations": 452831,
+    "Code": "WSM"
+  },
+  {
+    "Entity": "San Marino",
+    "total_cases": 23536,
+    "total_cases_per_million": 698604.927,
+    "total_deaths": 122,
+    "total_deaths_per_million": 3621.253,
+    "total_vaccinations": null,
+    "Code": "SMR"
+  },
+  {
+    "Entity": "Sao Tome and Principe",
+    "total_cases": 6281,
+    "total_cases_per_million": 27621.783,
+    "total_deaths": 77,
+    "total_deaths_per_million": 338.621,
+    "total_vaccinations": null,
+    "Code": "STP"
+  },
+  {
+    "Entity": "Saudi Arabia",
+    "total_cases": 829095,
+    "total_cases_per_million": 22771.815,
+    "total_deaths": 9607,
+    "total_deaths_per_million": 263.865,
+    "total_vaccinations": null,
+    "Code": "SAU"
+  },
+  {
+    "Entity": "Scotland",
+    "total_cases": null,
+    "total_cases_per_million": null,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": null,
+    "Code": "OWID_SCT"
+  },
+  {
+    "Entity": "Senegal",
+    "total_cases": 88917,
+    "total_cases_per_million": 5134.828,
+    "total_deaths": 1971,
+    "total_deaths_per_million": 113.822,
+    "total_vaccinations": 2928086,
+    "Code": "SEN"
+  },
+  {
+    "Entity": "Serbia",
+    "total_cases": 2487935,
+    "total_cases_per_million": 362063.302,
+    "total_deaths": 17788,
+    "total_deaths_per_million": 2588.646,
+    "total_vaccinations": null,
+    "Code": "SRB"
+  },
+  {
+    "Entity": "Seychelles",
+    "total_cases": 50665,
+    "total_cases_per_million": 472908.013,
+    "total_deaths": 172,
+    "total_deaths_per_million": 1605.451,
+    "total_vaccinations": null,
+    "Code": "SYC"
+  },
+  {
+    "Entity": "Sierra Leone",
+    "total_cases": 7760,
+    "total_cases_per_million": 901.726,
+    "total_deaths": 126,
+    "total_deaths_per_million": 14.641,
+    "total_vaccinations": 6820857,
+    "Code": "SLE"
+  },
+  {
+    "Entity": "Singapore",
+    "total_cases": 2222006,
+    "total_cases_per_million": 394180.828,
+    "total_deaths": 1722,
+    "total_deaths_per_million": 305.48,
+    "total_vaccinations": null,
+    "Code": "SGP"
+  },
+  {
+    "Entity": "Sint Maarten (Dutch part)",
+    "total_cases": null,
+    "total_cases_per_million": null,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": 67068,
+    "Code": "SXM"
+  },
+  {
+    "Entity": "Slovakia",
+    "total_cases": 2664186,
+    "total_cases_per_million": 472084.211,
+    "total_deaths": 21008,
+    "total_deaths_per_million": 3722.542,
+    "total_vaccinations": null,
+    "Code": "SVK"
+  },
+  {
+    "Entity": "Slovenia",
+    "total_cases": 1326369,
+    "total_cases_per_million": 625692.091,
+    "total_deaths": 7068,
+    "total_deaths_per_million": 3334.209,
+    "total_vaccinations": null,
+    "Code": "SVN"
+  },
+  {
+    "Entity": "Solomon Islands",
+    "total_cases": 24575,
+    "total_cases_per_million": 33930.623,
+    "total_deaths": 153,
+    "total_deaths_per_million": 211.247,
+    "total_vaccinations": null,
+    "Code": "SLB"
+  },
+  {
+    "Entity": "Somalia",
+    "total_cases": 27324,
+    "total_cases_per_million": 1552.72,
+    "total_deaths": 1361,
+    "total_deaths_per_million": 77.34,
+    "total_vaccinations": null,
+    "Code": "SOM"
+  },
+  {
+    "Entity": "South Africa",
+    "total_cases": 4061085,
+    "total_cases_per_million": 67804.669,
+    "total_deaths": 102595,
+    "total_deaths_per_million": 1712.946,
+    "total_vaccinations": null,
+    "Code": "ZAF"
+  },
+  {
+    "Entity": "South America",
+    "total_cases": 67835542,
+    "total_cases_per_million": 155295.219,
+    "total_deaths": 1348996,
+    "total_deaths_per_million": 3088.243,
+    "total_vaccinations": 952203708,
+    "Code": "OWID_SAM"
+  },
+  {
+    "Entity": "South Korea",
+    "total_cases": 30469702,
+    "total_cases_per_million": 588038.731,
+    "total_deaths": 33909,
+    "total_deaths_per_million": 654.414,
+    "total_vaccinations": null,
+    "Code": "KOR"
+  },
+  {
+    "Entity": "South Sudan",
+    "total_cases": 18368,
+    "total_cases_per_million": 1683.104,
+    "total_deaths": 138,
+    "total_deaths_per_million": 12.645,
+    "total_vaccinations": 3062073,
+    "Code": "SSD"
+  },
+  {
+    "Entity": "Spain",
+    "total_cases": 13755956,
+    "total_cases_per_million": 289242.045,
+    "total_deaths": 119186,
+    "total_deaths_per_million": 2506.086,
+    "total_vaccinations": 105459628,
+    "Code": "ESP"
+  },
+  {
+    "Entity": "Sri Lanka",
+    "total_cases": 672024,
+    "total_cases_per_million": 30781.393,
+    "total_deaths": 16829,
+    "total_deaths_per_million": 770.836,
+    "total_vaccinations": null,
+    "Code": "LKA"
+  },
+  {
+    "Entity": "Sudan",
+    "total_cases": 63787,
+    "total_cases_per_million": 1360.813,
+    "total_deaths": 5011,
+    "total_deaths_per_million": 106.903,
+    "total_vaccinations": null,
+    "Code": "SDN"
+  },
+  {
+    "Entity": "Suriname",
+    "total_cases": 82227,
+    "total_cases_per_million": 133043.495,
+    "total_deaths": 1400,
+    "total_deaths_per_million": 2265.204,
+    "total_vaccinations": null,
+    "Code": "SUR"
+  },
+  {
+    "Entity": "Sweden",
+    "total_cases": 2697159,
+    "total_cases_per_million": 255670.658,
+    "total_deaths": 23634,
+    "total_deaths_per_million": 2240.328,
+    "total_vaccinations": 25655479,
+    "Code": "SWE"
+  },
+  {
+    "Entity": "Switzerland",
+    "total_cases": 4411059,
+    "total_cases_per_million": 504670.629,
+    "total_deaths": 14203,
+    "total_deaths_per_million": 1624.97,
+    "total_vaccinations": 16926060,
+    "Code": "CHE"
+  },
+  {
+    "Entity": "Syria",
+    "total_cases": 57463,
+    "total_cases_per_million": 2597.169,
+    "total_deaths": 3164,
+    "total_deaths_per_million": 143.004,
+    "total_vaccinations": null,
+    "Code": "SYR"
+  },
+  {
+    "Entity": "Taiwan",
+    "total_cases": 9970937,
+    "total_cases_per_million": 417309.327,
+    "total_deaths": 17672,
+    "total_deaths_per_million": 739.619,
+    "total_vaccinations": 66971090,
+    "Code": "TWN"
+  },
+  {
+    "Entity": "Tajikistan",
+    "total_cases": 17786,
+    "total_cases_per_million": 1787.037,
+    "total_deaths": 125,
+    "total_deaths_per_million": 12.559,
+    "total_vaccinations": null,
+    "Code": "TJK"
+  },
+  {
+    "Entity": "Tanzania",
+    "total_cases": 42823,
+    "total_cases_per_million": 653.809,
+    "total_deaths": 846,
+    "total_deaths_per_million": 12.916,
+    "total_vaccinations": 38911619,
+    "Code": "TZA"
+  },
+  {
+    "Entity": "Thailand",
+    "total_cases": 4727831,
+    "total_cases_per_million": 65941.803,
+    "total_deaths": 33902,
+    "total_deaths_per_million": 472.851,
+    "total_vaccinations": null,
+    "Code": "THA"
+  },
+  {
+    "Entity": "Timor",
+    "total_cases": 23418,
+    "total_cases_per_million": 17459.207,
+    "total_deaths": 138,
+    "total_deaths_per_million": 102.885,
+    "total_vaccinations": 2011703,
+    "Code": "TLS"
+  },
+  {
+    "Entity": "Togo",
+    "total_cases": 39367,
+    "total_cases_per_million": 4448.902,
+    "total_deaths": 290,
+    "total_deaths_per_million": 32.773,
+    "total_vaccinations": null,
+    "Code": "TGO"
+  },
+  {
+    "Entity": "Tonga",
+    "total_cases": 16801,
+    "total_cases_per_million": 157214.107,
+    "total_deaths": 13,
+    "total_deaths_per_million": 121.647,
+    "total_vaccinations": 202720,
+    "Code": "TON"
+  },
+  {
+    "Entity": "Trinidad and Tobago",
+    "total_cases": 188737,
+    "total_cases_per_million": 123273.481,
+    "total_deaths": 4339,
+    "total_deaths_per_million": 2834.016,
+    "total_vaccinations": null,
+    "Code": "TTO"
+  },
+  {
+    "Entity": "Tunisia",
+    "total_cases": 1150793,
+    "total_cases_per_million": 93135.497,
+    "total_deaths": 29330,
+    "total_deaths_per_million": 2373.723,
+    "total_vaccinations": 13243761,
+    "Code": "TUN"
+  },
+  {
+    "Entity": "Turkey",
+    "total_cases": 17042722,
+    "total_cases_per_million": 199700.876,
+    "total_deaths": 101492,
+    "total_deaths_per_million": 1189.249,
+    "total_vaccinations": null,
+    "Code": "TUR"
+  },
+  {
+    "Entity": "Turks and Caicos Islands",
+    "total_cases": 6551,
+    "total_cases_per_million": 143266.413,
+    "total_deaths": 38,
+    "total_deaths_per_million": 831.037,
+    "total_vaccinations": null,
+    "Code": "TCA"
+  },
+  {
+    "Entity": "Tuvalu",
+    "total_cases": 2805,
+    "total_cases_per_million": 247463.608,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": null,
+    "Code": "TUV"
+  },
+  {
+    "Entity": "Uganda",
+    "total_cases": 170478,
+    "total_cases_per_million": 3608.031,
+    "total_deaths": 3630,
+    "total_deaths_per_million": 76.826,
+    "total_vaccinations": null,
+    "Code": "UGA"
+  },
+  {
+    "Entity": "Ukraine",
+    "total_cases": 5693260,
+    "total_cases_per_million": 143400.753,
+    "total_deaths": 119144,
+    "total_deaths_per_million": 3000.976,
+    "total_vaccinations": null,
+    "Code": "UKR"
+  },
+  {
+    "Entity": "United Arab Emirates",
+    "total_cases": 1051336,
+    "total_cases_per_million": 111356.915,
+    "total_deaths": 2349,
+    "total_deaths_per_million": 248.805,
+    "total_vaccinations": null,
+    "Code": "ARE"
+  },
+  {
+    "Entity": "United Kingdom",
+    "total_cases": 24341615,
+    "total_cases_per_million": 360568.785,
+    "total_deaths": 218405,
+    "total_deaths_per_million": 3235.201,
+    "total_vaccinations": null,
+    "Code": "GBR"
+  },
+  {
+    "Entity": "United States",
+    "total_cases": 103305370,
+    "total_cases_per_million": 305375.311,
+    "total_deaths": 1118719,
+    "total_deaths_per_million": 3306.984,
+    "total_vaccinations": 670987625,
+    "Code": "USA"
+  },
+  {
+    "Entity": "Upper middle income",
+    "total_cases": 144686675,
+    "total_cases_per_million": 57280.753,
+    "total_deaths": 2606536,
+    "total_deaths_per_million": 1031.915,
+    "total_vaccinations": 5404532638,
+    "Code": "OWID_UMC"
+  },
+  {
+    "Entity": "Uruguay",
+    "total_cases": 1034046,
+    "total_cases_per_million": 302105.647,
+    "total_deaths": 7617,
+    "total_deaths_per_million": 2225.374,
+    "total_vaccinations": 8936983,
+    "Code": "URY"
+  },
+  {
+    "Entity": "Uzbekistan",
+    "total_cases": 250932,
+    "total_cases_per_million": 7246.579,
+    "total_deaths": 1637,
+    "total_deaths_per_million": 47.274,
+    "total_vaccinations": null,
+    "Code": "UZB"
+  },
+  {
+    "Entity": "Vanuatu",
+    "total_cases": 12014,
+    "total_cases_per_million": 36768.847,
+    "total_deaths": 14,
+    "total_deaths_per_million": 42.847,
+    "total_vaccinations": 366638,
+    "Code": "VUT"
+  },
+  {
+    "Entity": "Vatican",
+    "total_cases": 29,
+    "total_cases_per_million": 35891.089,
+    "total_deaths": null,
+    "total_deaths_per_million": null,
+    "total_vaccinations": null,
+    "Code": "VAT"
+  },
+  {
+    "Entity": "Venezuela",
+    "total_cases": 551940,
+    "total_cases_per_million": 19502.009,
+    "total_deaths": 5852,
+    "total_deaths_per_million": 206.772,
+    "total_vaccinations": null,
+    "Code": "VEN"
+  },
+  {
+    "Entity": "Vietnam",
+    "total_cases": 11526858,
+    "total_cases_per_million": 117397.16,
+    "total_deaths": 43186,
+    "total_deaths_per_million": 439.835,
+    "total_vaccinations": 266211063,
+    "Code": "VNM"
+  },
+  {
+    "Entity": "Wallis and Futuna",
+    "total_cases": 3427,
+    "total_cases_per_million": 295532.942,
+    "total_deaths": 7,
+    "total_deaths_per_million": 603.656,
+    "total_vaccinations": null,
+    "Code": "WLF"
+  },
+  {
+    "Entity": "World",
+    "total_cases": 674463827,
+    "total_cases_per_million": 84571.153,
+    "total_deaths": 6865959,
+    "total_deaths_per_million": 860.924,
+    "total_vaccinations": 13306563904,
+    "Code": "OWID_WRL"
+  },
+  {
+    "Entity": "Yemen",
+    "total_cases": 11945,
+    "total_cases_per_million": 354.487,
+    "total_deaths": 2159,
+    "total_deaths_per_million": 64.072,
+    "total_vaccinations": null,
+    "Code": "YEM"
+  },
+  {
+    "Entity": "Zambia",
+    "total_cases": 342831,
+    "total_cases_per_million": 17126.419,
+    "total_deaths": 4055,
+    "total_deaths_per_million": 202.571,
+    "total_vaccinations": null,
+    "Code": "ZMB"
+  },
+  {
+    "Entity": "Zimbabwe",
+    "total_cases": 263921,
+    "total_cases_per_million": 16171.096,
+    "total_deaths": 5663,
+    "total_deaths_per_million": 346.986,
+    "total_vaccinations": null,
+    "Code": "ZWE"
+  }
+]
