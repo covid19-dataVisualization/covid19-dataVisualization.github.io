@@ -1,7 +1,7 @@
 // Set the dimensions and margins of the graph
-const margin = { top: 30, right: 30, bottom: 50, left: 70 };
-const width = 800 - margin.left - margin.right;
-const height = 500 - margin.top - margin.bottom;
+const margin = { top: 30, right: 30, bottom: 50, left: 80 };
+const width = 1000 - margin.left - margin.right;
+const height = 660 - margin.top - margin.bottom;
 
 // Append the svg object to the body of the page
 const svg = d3.select("#my_dataviz")
@@ -17,7 +17,7 @@ const svg = d3.select("#my_dataviz")
 d3.csv("data_barchart_wafflechart_piechart.csv").then(function(data) {
   // Filter the data to select rows where Total_Vaccinations is not null
   const filteredData = data.filter(function(d) {
-    return d.Total_Vaccinations !== null && +d.Total_Vaccinations > 500 && +d.Total_Cases > 10000;
+    return d.Total_Vaccinations > 15000000;
   });
 
   // Print the filtered data to the console
@@ -39,7 +39,7 @@ d3.csv("data_barchart_wafflechart_piechart.csv").then(function(data) {
   // Add X axis
   const x = d3.scaleLinear()
   .domain([-d3.max(randomData, function(d) { return d.Total_Cases; })/12, d3.max(randomData, function(d) { return d.Total_Cases; })*1.3])
-  .range([20, width-20]); 
+  .range([0, width]); 
     svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x))
@@ -52,14 +52,14 @@ d3.csv("data_barchart_wafflechart_piechart.csv").then(function(data) {
   // Add Y axis
   const y = d3.scaleLinear()
   .domain([-d3.max(randomData, function(d) { return d.Total_Deaths; })/12, d3.max(randomData, function(d) { return d.Total_Deaths; })*1.3])
-  .range([ height-20, 20 ]);
+  .range([ height,10]);
   svg.append("g")
     .call(d3.axisLeft(y));
 
   // Add a scale for bubble size
   const z = d3.scaleSqrt()
     .domain([0, d3.max(randomData, function(d) { return d.Total_Vaccinations; })])
-    .range([ 0, 70]);
+    .range([ 0, 65]);
 
   //Add color scale
   const colorScale = d3.scaleOrdinal()
@@ -77,22 +77,23 @@ d3.csv("data_barchart_wafflechart_piechart.csv").then(function(data) {
    .attr("r", function (d) { return z(d.Total_Vaccinations); } )
    .style("fill", function(d) { return colorScale(d.Country); }) // Set the fill color based on the country
    .style("opacity", "0.8")
-   .attr("stroke", "white");
+   .attr("stroke", "white")
+   .style("stroke","black");
 // Add a tooltip
 const tooltip = d3.select("#my_dataviz")
   .append("div")
   .style("opacity", 0)
   .attr("class", "tooltip")
-  .style("background-color", "white")
   .style("border", "solid")
   .style("border-width", "2px")
   .style("border-radius", "5px")
-  .style("padding", "5px");
+  .style("padding", "5px")
+  .style("background-color","yellow");
 
 // Show tooltip on mouseover
 const mouseover = function(event, d) {
   tooltip
-    .style("opacity", 1)
+    .style("opacity", 0.8)
   d3.select(this)
     .style("r", function (d) { return z(d.Total_Vaccinations)*1.2; } )
     ;
@@ -108,7 +109,10 @@ const mouseout = function(event, d) {
 // Move tooltip with mouse
 const mousemove = function(event, d) {
   tooltip
-    .html(d.Country)
+    .html("Country : "+d.Country+ " __ Total cases : "
+    +d.Total_Cases.toLocaleString()+" __ Total deaths : "
+    +d.Total_Deaths.toLocaleString()+" __ Total vaccination : "
+    +d.Total_Vaccinations.toLocaleString())
     .style("left", (event.pageX+10) + "px")
     .style("top", (event.pageY+10) + "px");
 };
@@ -136,8 +140,9 @@ svg.append("text")
 .attr("x", (width / 2))
 .attr("y", 0 - (margin.top / 2))
 .attr("text-anchor", "middle")
-.style("font-size", "22px")
-.text("COVID-19: Cases, Deaths, and Vaccinations in Selected Countries");
-
+.style("font-size", "20px")
+.text("Bubble chart of countries with more than 15m total vaccinations")
+.font("Arial")
+.style("fill", "red");
 
 });
