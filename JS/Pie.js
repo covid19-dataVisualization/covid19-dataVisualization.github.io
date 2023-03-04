@@ -1,6 +1,6 @@
 
 // Set the dimensions and margins of the graph
-const margin = { top: 30, right: 30, bottom: 50, left: 70 };
+const margin = { top: 30, right: 50, bottom: 50, left: 70 };
 const width = 600 - margin.left - margin.right;
 const height = 500 - margin.top - margin.bottom;
 
@@ -9,6 +9,7 @@ const svg = d3.select("#chart")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
+  .style("background-color","ccc")
   .append("g")
   .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
@@ -18,13 +19,13 @@ const svg = d3.select("#chart")
 d3.csv("data_barchart_wafflechart_piechart.csv").then(function(data) {
   // Filter the data to select rows where Total_Vaccinations is not null
   const filteredData = data.filter(function(d) {
-    return d.Total_Cases !== null && +d.Total_Cases > 1000000 ;
+    return d.Total_Cases !== null && +d.Total_Cases > 21000000 ;
   });
 
   // Print the filtered data to the console
-  const randomData = d3.shuffle(filteredData).slice(0,10);
+  const randomData = d3.shuffle(filteredData);
   randomData.sort(function(a, b) {
-    return b.Total_Vaccinations - a.Total_Vaccinations;
+    return b.Total_Cases - a.Total_Cases;
   });
   // console.log(randomData);
   // Cast the string values to numbers
@@ -60,15 +61,15 @@ d3.csv("data_barchart_wafflechart_piechart.csv").then(function(data) {
    .enter().append("path")
    .attr("d", arc)
    .attr("fill", function(d) { return color(d.data.Country); })
-   .attr("stroke", "white")
+   .attr("stroke", "black")
    .style("stroke-width", "2px")
 // Add a title
 svg.append("text")
 .attr("x", (width / 2))
 .attr("y", 0 - (margin.top / 2))
 .attr("text-anchor", "middle")
-.style("font-size", "14px")
-.text("Comparing COVID-19 Total cases among 10 random countries with cases more than 1 million");
+.style("font-size", "16px")
+.text("Comparing COVID Total cases among Top 10 affected countries");
 
 // Create the legend
 var legend = svg.append("g")
@@ -90,7 +91,7 @@ var legendLabels = legend.selectAll("text")
     .data(data_ready)
     .enter()
     .append("text")
-    .attr("x", 15)
+    .attr("x", 20)
     .attr("y", function(d, i) { return i * 20 + 10; })
     .text(function(d) { return d.data.Country; });
 
