@@ -5,8 +5,10 @@ const drawChart = async () => {
   const margin = { top: 10, right: 10, bottom: 10, left: 10 };
     
     const geojson = await d3.json("../../data/geojson.json");
-    const coviddata = await d3.json("../../data/coviddata.json");
+    const coviddatafile = await d3.json("../../data/covid-updated-data.json");
     const countrytocontinent = await d3.json("../../data/countrytocontinent.json");
+    const coviddata = coviddatafile['data']
+    console.log(coviddata)
     const colorScale = d3.scaleLinear()
     .domain(d3.extent(coviddata, d => d.total_vaccinations / 35))
     .range(["#D7F4F8", "#1637A9"]);
@@ -63,7 +65,7 @@ const drawChart = async () => {
   
     const filteredList = coviddata.filter(obj => {
       // Check if any key matches the value
-      return !Object.keys(obj).some(key => key === "Entity" && dataremoved.includes(obj[key]));
+      return !Object.keys(obj).some(key => key === "location" && dataremoved.includes(obj[key]));
     });
   
     // filteredData = filteredList.sort((a, b) => b.total_deaths - a.total_deaths).slice(0, 10);
@@ -76,7 +78,7 @@ const drawChart = async () => {
         map.selectAll("path")
           // .data(geojson.features)
           // .attr("opacity", d => filteredData.find(country => d.properties.name.toLowerCase().includes(country.trim())) ? 1 : 0.2);
-          .attr("opacity", d => filteredData.find(b => b.Entity === d.properties.name) ? 1 : 0.2);
+          .attr("opacity", d => filteredData.find(b => b.location === d.properties.name) ? 1 : 0.2);
       }
       else {
         map.selectAll("path")
@@ -92,7 +94,7 @@ const drawChart = async () => {
       .append("path")
       .attr("d", path)
       .attr("fill", d => {
-        const data = coviddata.find(b => b.Entity === d.properties.name);
+        const data = coviddata.find(b => b.location === d.properties.name);
         if (data && data.total_vaccinations != null) {
           return colorScale(data.total_vaccinations );
         } else {
@@ -114,7 +116,7 @@ const drawChart = async () => {
   
         let country = d.properties.name;
         let data = coviddata.find(function (d) {
-          return d.Entity == country;
+          return d.location == country;
         });
         if (data) {
           
@@ -128,7 +130,7 @@ const drawChart = async () => {
           d3.select(".tooltip")
             .html(
              
-              `<div>Country: ${data.Entity}</div> <br> <div>Total Vaccinations: ${formattedTotalCases}</div>`
+              `<div>Country: ${data.location}</div> <br> <div>Total Vaccinations: ${formattedTotalCases}</div>`
             )
             .style("left", e.pageX + 20 + "px")
             .style("top", e.pageY + "px");   
@@ -138,9 +140,9 @@ const drawChart = async () => {
       })
       .on("mouseout", function (e, d) {
         d3.select(this).transition().duration(100).attr("fill", d => {
-          const filteredData = coviddata.filter(item => filterValue.some(country => item.Entity.toLowerCase().includes(country.trim())));
+          const filteredData = coviddata.filter(item => filterValue.some(country => item.location.toLowerCase().includes(country.trim())));
           const color = filteredData.length === 0 ? "#f0eee5" : colorScale(filteredData[0].total_vaccinations / 30);
-          const data = coviddata.find(b => b.Entity === d.properties.name);
+          const data = coviddata.find(b => b.location === d.properties.name);
           if (data && data.total_vaccinations != null) {
             return colorScale(data.total_vaccinations );
           } else {
