@@ -7,7 +7,7 @@ function drawChart_a1_v1() {
 	let win_height = win_width / ratio;
 
 	// set the dimensions and margins of the graph
-	let margin = { top: 30, right: 0, bottom: 100, left: 100 };
+	let margin = { top: 30, right: 30, bottom: 100, left: 100 };
 	let width = 500;
 	let height = 400 ;
 
@@ -16,7 +16,7 @@ function drawChart_a1_v1() {
 	let svg = d3.select(div_id)
 		.append("svg")
 		.attr("width",600)
-  		.attr("height", 550)
+  		.attr("height",550)
 		.style("background-color","ccc");
 
 	let xScale = d3.scaleBand().range([0, width]).padding(0.4),
@@ -36,7 +36,7 @@ function drawChart_a1_v1() {
 		});
 
 		// Extract the top 20 countries by Total_Cases
-		let top20 = data.slice(0, 20);
+		let top20 = data.slice(202, 222);
 
 		// Calculate the sum of Total_Cases for the other countries
 		let other = data.slice(20, data.length);
@@ -79,7 +79,7 @@ function drawChart_a1_v1() {
 			.attr("text-anchor", "middle")
 			.style("font-size", "14px")
 			.style("font-weight","bold")
-			.text("Comparing Total cases among Top 20 countries using Line chart");
+			.text("Comparing Total cases among bottom 20 countries using Line chart");
 			
 		g.selectAll(".bar")
 			.data(top20)
