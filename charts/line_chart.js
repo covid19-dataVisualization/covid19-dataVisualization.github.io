@@ -1,4 +1,4 @@
-d3.csv("..../..../data/data_linechart.csv").then(function(data) {
+d3.csv("../../data/data_linechart.csv", function(data) {
   // Filter data for current country
   var current_country = "Iran"
   data = data.filter(function(d) {
