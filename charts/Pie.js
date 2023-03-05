@@ -1,14 +1,14 @@
 
 // Set the dimensions and margins of the graph
 const margin = { top: 30, right: 70, bottom: -20, left:20 };
-const width = 370 - margin.left - margin.right;
-const height = 370 - margin.top - margin.bottom;
+var width = 370 ;
+var height = 370 ;
 
 // Append the svg object to the body of the page
 const svg = d3.select("#pie")
   .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("width",700)
+  .attr("height",500)
   .style("background-color","ccc")
   .append("g")
   .attr("transform",

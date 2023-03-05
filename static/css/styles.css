@@ -14,6 +14,14 @@ body{
     align-items: center;
     justify-content: center;
   }
+.bubble_chart{
+  width: 600px;
+  height: 500px;
+}
+.pie_chart{
+  width: 600px;
+  height: 500px;
+}
 
   .tooltip {
     position: absolute;

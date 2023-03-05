@@ -1,23 +1,23 @@
 // Set the dimensions and margins of the graph
-const margin_bubble = { top: 80, right: 10, bottom: 0, left: 150 };
-const width_bubble = 900;
-const height_bubble = 400;
+const marginbubble = { top: 30, right: 30, bottom: 50, left:100 };
+
 
 // Append the svg object to the body of the page
-const svg = d3.select("#bubble")
+const svgbubble = d3.select("#bubble")
   .append("svg")
-  .attr("width", width_bubble)
-  .attr("height", height_bubble)
+  .attr("width", 700 )
+  .attr("height", 500)
+  .style("background-color","ccc")
   .append("g")
   .attr("transform",
-        "translate(" + margin_bubble.left + "," + margin_bubble.top + ")");
+        "translate(" + marginbubble.left + "," + marginbubble.top + ")");
 
 // Parse the data
 
 d3.csv("../../data/wafflechart_pie_bubble.csv").then(function(data) {
   // Filter the data to select rows where Total_Vaccinations is not null
   const filteredData = data.filter(function(d) {
-    return d.Total_Vaccinations !== null && +d.Total_Vaccinations > 500 && +d.Total_Cases > 10000;
+    return d.Total_Vaccinations > 15000000;
   });
 
   // Print the filtered data to the console
@@ -29,15 +29,18 @@ d3.csv("../../data/wafflechart_pie_bubble.csv").then(function(data) {
   // Cast the string values to numbers
   randomData.forEach(function(d) {
     d.Total_Cases = +d.Total_Cases;
+    d.Total_Cases_Per_Million = +d.Total_Cases_Per_Million;
     d.Total_Deaths = +d.Total_Deaths;
+    d.Total_Deaths_Per_Million = +d.Total_Deaths_Per_Million;
     d.Total_Vaccinations = +d.Total_Vaccinations;
+    d.Total_Vaccinations_Per_Million = +d.Total_Vaccinations_Per_Million;
   });
 
   // Add X axis
   const x = d3.scaleLinear()
-  .domain([-d3.max(randomData, function(d) { return d.Total_Cases; })/12, d3.max(randomData, function(d) { return d.Total_Cases; })*1.3])
-  .range([20, width-20]); 
-    svg.append("g")
+  .domain([-d3.max(randomData, function(d) { return d.Total_Cases; })/5.5, d3.max(randomData, function(d) { return d.Total_Cases; })*1.3])
+  .range([0, width]); 
+  svgbubble.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x))
     .selectAll("text")
@@ -48,15 +51,15 @@ d3.csv("../../data/wafflechart_pie_bubble.csv").then(function(data) {
 
   // Add Y axis
   const y = d3.scaleLinear()
-  .domain([-d3.max(randomData, function(d) { return d.Total_Deaths; })/12, d3.max(randomData, function(d) { return d.Total_Deaths; })*1.3])
-  .range([ height-20, 20 ]);
-  svg.append("g")
+  .domain([-d3.max(randomData, function(d) { return d.Total_Deaths; })/6, d3.max(randomData, function(d) { return d.Total_Deaths; })*1.3])
+  .range([ height,10]);
+  svgbubble.append("g")
     .call(d3.axisLeft(y));
 
   // Add a scale for bubble size
   const z = d3.scaleSqrt()
     .domain([0, d3.max(randomData, function(d) { return d.Total_Vaccinations; })])
-    .range([ 0, 70]);
+    .range([ 0, 50]);
 
   //Add color scale
   const colorScale = d3.scaleOrdinal()
@@ -64,7 +67,7 @@ d3.csv("../../data/wafflechart_pie_bubble.csv").then(function(data) {
     .range(d3.schemeCategory10);
 
  // Add dots
- const dots = svg.append('g')
+ const dots = svgbubble.append('g')
  .selectAll("dot")
  .data(randomData)
  .enter()
@@ -74,22 +77,23 @@ d3.csv("../../data/wafflechart_pie_bubble.csv").then(function(data) {
    .attr("r", function (d) { return z(d.Total_Vaccinations); } )
    .style("fill", function(d) { return colorScale(d.Country); }) // Set the fill color based on the country
    .style("opacity", "0.8")
-   .attr("stroke", "white");
+   .attr("stroke", "white")
+   .style("stroke","black");
 // Add a tooltip
 const tooltip = d3.select("#bubble")
   .append("div")
   .style("opacity", 0)
-  .attr("class", "tooltip-bubble")
-  .style("background-color", "white")
+  .attr("class", "tooltip")
   .style("border", "solid")
   .style("border-width", "2px")
   .style("border-radius", "5px")
-  .style("padding", "5px");
+  .style("padding", "5px")
+  .style("background-color","yellow");
 
 // Show tooltip on mouseover
 const mouseover = function(event, d) {
   tooltip
-    .style("opacity", 1)
+    .style("opacity", 0.8)
   d3.select(this)
     .style("r", function (d) { return z(d.Total_Vaccinations)*1.2; } )
     ;
@@ -97,7 +101,7 @@ const mouseover = function(event, d) {
 // Hide tooltip on mouseout
 const mouseout = function(event, d) {
   tooltip
-    .style("opacity", 1)
+    .style("opacity", 0)
   d3.select(this)
     .style("r", function (d) { return z(d.Total_Vaccinations); } )
     ;
@@ -105,7 +109,10 @@ const mouseout = function(event, d) {
 // Move tooltip with mouse
 const mousemove = function(event, d) {
   tooltip
-    .html(d.Country)
+    .html("Country : "+d.Country+ " __ Total cases : "
+    +d.Total_Cases.toLocaleString()+" __ Total deaths : "
+    +d.Total_Deaths.toLocaleString()+" __ Total vaccination : "
+    +d.Total_Vaccinations.toLocaleString())
     .style("left", (event.pageX+10) + "px")
     .style("top", (event.pageY+10) + "px");
 };
@@ -114,27 +121,29 @@ dots.on("mouseover", mouseover)
     .on("mouseout", mouseout)
     .on("mousemove", mousemove);
 // Add X axis label
-svg.append("text")
+svgbubble.append("text")
 .attr("transform", "translate(" + (width/2) + " ," + (height + margin.top + 20) + ")")
 .style("text-anchor", "middle")
 .text("Total Cases");
 
 // Add Y axis label
-svg.append("text")
+svgbubble.append("text")
 .attr("transform", "rotate(-90)")
-.attr("y", 0 - margin.left)
+.attr("y", 0 - marginbubble.left)
 .attr("x",0 - (height / 2))
 .attr("dy", "1em")
 .style("text-anchor", "middle")
 .text("Total Deaths");
 
 // Add a title
-svg.append("text")
+svgbubble.append("text")
 .attr("x", (width / 2))
-.attr("y", 0 - (margin.top / 2))
+.attr("y", 0 - (marginbubble.top / 2))
 .attr("text-anchor", "middle")
-.style("font-size", "22px")
-.text("COVID-19: Cases, Deaths, and Vaccinations");
-
+.style("font-size", "14px")
+.style("font-weight","bold")
+.text("Bubble chart of countries with more than 15m total vaccinations")
+.font("Arial")
+.style("fill", "red");
 
 });
