@@ -79,7 +79,7 @@ function drawChart_a1_v3() {
 			.attr("text-anchor", "middle")
 			.style("font-size", "14px")
 			.style("font-weight","bold")
-			.text("Comparing Total Deaths among Top 20 countries using Line chart");
+			.text("Comparing Total Vaccinations among Top 20 countries using Line chart");
 			
 		g.selectAll(".bar")
 			.data(top20)
