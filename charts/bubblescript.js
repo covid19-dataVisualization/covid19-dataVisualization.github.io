@@ -143,7 +143,5 @@ svgbubble.append("text")
 .style("font-size", "14px")
 .style("font-weight","bold")
 .text("Bubble chart of countries with more than 15m total vaccinations")
-.font("Arial")
-.style("fill", "red");
 
 });
