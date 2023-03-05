@@ -2,7 +2,7 @@
 
 var margin = {top: 20, right: 50, bottom: 30, left: 90},
     width = 800 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 800 - margin.top - margin.bottom;
 d3.csv("../../data/stacked.csv").then(function (data) {
     // Step 2: Stack the data
     var stack = d3.stack()
@@ -24,7 +24,7 @@ d3.csv("../../data/stacked.csv").then(function (data) {
     var yScale = d3.scaleBand()
         .domain(data.map(function (d) { return d.Country; }))
         .range([0, 800])
-        .padding(0.1);
+        .padding(0.05);
 
     // Create the SVG element
     var svg = d3.select("#stack")
@@ -60,7 +60,7 @@ d3.csv("../../data/stacked.csv").then(function (data) {
                 .style("opacity", .9);
             tooltip.html("Country: " + d.data.Country + "<br>" +
                 "Vaccine: " + d3.select(this.parentNode).datum().key + "<br>" +
-                "Total Vaccinated: " + (d[1] + d[0]))
+                "Total Vaccinated: " + (d[1] + d[0]).toLocaleString())
                 .style("left", (i.pageX + 10) + "px")
                 .style("top", (i.pageY - 28) + "px")
                 .style("visibility", "visible");
