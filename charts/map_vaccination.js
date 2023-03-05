@@ -8,7 +8,6 @@ const drawChart = async () => {
     const coviddatafile = await d3.json("../../data/covid-updated-data.json");
     const countrytocontinent = await d3.json("../../data/countrytocontinent.json");
     const coviddata = coviddatafile['data']
-    console.log(coviddata)
     const colorScale = d3.scaleLinear()
     .domain(d3.extent(coviddata, d => d.total_vaccinations / 35))
     .range(["#D7F4F8", "#1637A9"]);

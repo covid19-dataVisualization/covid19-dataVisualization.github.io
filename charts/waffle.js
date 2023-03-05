@@ -2,7 +2,7 @@ function waffle() {
 
   var total = 0;
   var
-    widthSquares = 45,
+    widthSquares = 15,
     heightSquares = 5,
     squareValue = 0,
     gap = 0.5;
@@ -49,7 +49,7 @@ function waffle() {
     //value of a square  
     //remap data
     squareSize = 25
-    squareValue = (total/ (heightSquares * widthSquares)) * 100;
+    squareValue = (total/ (squareSize * widthSquares));
     chart_data.forEach(function (d, i) {
       // console.log(i)
       d[value_title] = +d[value_title];

@@ -32,8 +32,6 @@ d3.csv("../../data/stacked.csv", function (data) {
         .range(colors)
         .domain(ke_val);
 
-
-
     // 5. Create a stack generator and use it to generate a stacked dataset
     var stack = d3.stack()
         .keys(ke_val)
