@@ -1,7 +1,7 @@
 const drawChart = async () => {
-  const width = 600;
-  const height = 400;
-  const margin = { top: 10, right: 10, bottom: 10, left: 10 };
+  const width = 900;
+  const height = 500;
+  const margin = { top: 100, right: 100, bottom: 10, left: 100 };
 
   const geojson = await d3.json("../../data/geojson.json");
   const coviddata = await d3.json("../../data/coviddata.json");
@@ -135,15 +135,15 @@ const drawChart = async () => {
           .style("top", e.pageY + "px");
       }
     })
-    // .on("mouseout", function (e, d) {
-    //   d3.select(this).transition().duration(100).attr("fill", d => colorScale(coviddata.find(b => b.Entity === d.properties.name)?.total_cases || 0))
-    //   d3.select(".tooltip").style("display", "none");
-    // });
+   //  .on("mouseout", function (e, d) {
+     //  d3.select(this).transition().duration(100).attr("fill", d => colorScale(coviddata.find(b => b.Entity === d.properties.name)?.total_cases || 0))
+      // d3.select(".tooltip").style("display", "none");
+    // })
 
     .on("mouseout", function (e, d) {
       const filteredData = coviddata.filter(item => filterValue.some(country => item.Entity.toLowerCase().includes(country.trim())));
       const color = filteredData.length === 0 ? "#f0eee5" : colorScale(filteredData[0].total_cases / 30);
-      d3.select(this).transition().duration(100).attr("fill", color);
+      d3.select(this).transition().duration(100).attr("fill", d => colorScale(coviddata.find(b => b.Entity === d.properties.name)?.total_cases || 0))
       d3.select(".tooltip").style("display", "none");
     });
 
