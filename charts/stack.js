@@ -55,12 +55,14 @@ d3.csv("../../data/stacked.csv").then(function (data) {
         .attr("width", function (d) { return xScale(d[1]) - xScale(d[0]); })
         .attr("height", yScale.bandwidth())
         .on("mouseover", function (i, d) {
+            vacc = d3.select(this.parentNode).datum().key
+            
             tooltip.transition()
                 .duration(200)
                 .style("opacity", .9);
             tooltip.html("Country: " + d.data.Country + "<br>" +
-                "Vaccine: " + d3.select(this.parentNode).datum().key + "<br>" +
-                "Total Vaccinated: " + (d[1] + d[0]))
+                "Vaccine: " + vacc + "<br>" +
+                "Total Vaccinated: " + (d.data[vacc]))
                 .style("left", (i.pageX + 10) + "px")
                 .style("top", (i.pageY - 28) + "px")
                 .style("visibility", "visible");
