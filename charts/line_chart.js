@@ -1,4 +1,4 @@
-d3.csv("data_linechart.csv").then(function(data) {
+d3.csv("..../..../data/data_linechart.csv").then(function(data) {
   // Filter data for current country
   var current_country = "Iran"
   data = data.filter(function(d) {
@@ -20,7 +20,7 @@ d3.csv("data_linechart.csv").then(function(data) {
       height = 270 - margin.top - margin.bottom;
 
   // Add the SVG element
-  var svg = d3.select("#chart")
+  var svg = d3.select("#line")
     .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
