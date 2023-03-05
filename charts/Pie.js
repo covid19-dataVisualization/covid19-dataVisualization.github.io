@@ -7,7 +7,7 @@ var height = 370 ;
 // Append the svg object to the body of the page
 const svg = d3.select("#pie")
   .append("svg")
-  .attr("width",700)
+  .attr("width",600)
   .attr("height",500)
   .style("background-color","ccc")
   .append("g")

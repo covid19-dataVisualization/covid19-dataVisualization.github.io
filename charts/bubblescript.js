@@ -5,7 +5,7 @@ const marginbubble = { top: 30, right: 30, bottom: 50, left:100 };
 // Append the svg object to the body of the page
 const svgbubble = d3.select("#bubble")
   .append("svg")
-  .attr("width", 700 )
+  .attr("width", 600 )
   .attr("height", 500)
   .style("background-color","ccc")
   .append("g")

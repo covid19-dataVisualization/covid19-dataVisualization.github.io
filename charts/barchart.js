@@ -117,7 +117,7 @@ function drawChart_a1_v1() {
 			.style('top', yPos + 'px')
 			.html(`
 				<h2>${i.Country}</h2>
-				<div> Total_Cases: ${i.Total_Cases}</div>
+				<div> Total_Cases: ${i.Total_Cases.toLocaleString()}</div>
 			`);
 
 		d3.select('#tooltip').classed('hidden', false);
