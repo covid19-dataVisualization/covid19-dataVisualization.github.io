@@ -3,7 +3,7 @@
 var margin = {top: 20, right: 50, bottom: 30, left: 90},
     width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
-d3.csv("../../data/stacked.csv").then(function (data) {
+d3.csv("../../data/stack.csv").then(function (data) {
     // Step 2: Stack the data
     var stack = d3.stack()
         .keys(data.columns.slice(1))
@@ -15,7 +15,7 @@ d3.csv("../../data/stacked.csv").then(function (data) {
     // Define color scale
     var color = d3.scaleOrdinal()
         .domain(data.columns.slice(1))
-        .range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#ff5733", "#a8f7f3", "#9b59b6"]);
+        .range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#ff5733", "#a8f7f3", "#9b59b6", "#4b24b6"]);
 
     var xScale = d3.scaleLinear()
         .domain([0, d3.max(stackedData, function (d) { return d3.max(d, function (d) { return d[1]; }); })])
