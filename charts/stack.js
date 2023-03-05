@@ -1,87 +1,68 @@
-// 1. Load the data from the CSV file
-d3.csv("../../data/stacked.csv", function (data) {
+// Step 1: Parse the CSV data
 
-    // 2. Define the dimensions and margins
-    var margin = { top: 20, right: 60, bottom: 30, left: 100 },
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
-
-    // 3. Create scales for the x and y axes
-    var y = d3.scaleBand()
-        .rangeRound([height, 0])
-        .padding(0.1)
-        .domain(data.map(function (d) { return d.Country; }));
-
-    var x = d3.scaleLinear()
-        .rangeRound([0, width])
-        .domain([0, d3.max(data, function (d) {
-            var values = Object.keys(d).map(function (key) {
-                return key !== "Country" ? +d[key] : 0;
-            });
-            return d3.sum(values);
-        })]);
-
-    // var x = d3.scaleLinear()
-    //     .rangeRound([0, width])
-    //     .domain([0, d3.max(data, function (d) { return +d.Total; })]);
-
-    var colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#9edae5', '#ff9896', '#dbdb8d'];
-    var ke_val = ["CanSino", "Moderna", "AstraZeneca", "Pfizer", "Sinopharm", "Sputnik", "Johnson", "Novavax", "Valneva", "Medicago", "Sinovac", "Covaxin", "Sanofi"]
-    // Create an ordinal scale using your array of colors
-    var colorScale = d3.scaleOrdinal()
-        .range(colors)
-        .domain(ke_val);
-
-    // 5. Create a stack generator and use it to generate a stacked dataset
+var margin = {top: 20, right: 50, bottom: 30, left: 90},
+    width = 800 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+d3.csv("../../data/stacked.csv").then(function (data) {
+    // Step 2: Stack the data
     var stack = d3.stack()
-        .keys(ke_val)
-        .order(d3.stackOrderDescending);
+        .keys(data.columns.slice(1))
+        .order(d3.stackOrderDescending)
+        .offset(d3.stackOffsetNone);
+
     var stackedData = stack(data);
 
-    // 6. Create a group element for each stack and a group element for the y-axis
-    var svg = d3.select("#stack").append("svg")
+    // Define color scale
+    var color = d3.scaleOrdinal()
+        .domain(data.columns.slice(1))
+        .range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#ff5733", "#a8f7f3", "#9b59b6"]);
+
+    var xScale = d3.scaleLinear()
+        .domain([0, d3.max(stackedData, function (d) { return d3.max(d, function (d) { return d[1]; }); })])
+        .range([0, 600]);
+
+    var yScale = d3.scaleBand()
+        .domain(data.map(function (d) { return d.Country; }))
+        .range([0, 800])
+        .padding(0.1);
+
+    // Create the SVG element
+    var svg = d3.select("#stack")
+        .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var stacks = svg.selectAll(".stack")
+
+    // Step 5: Create the groups for the bars
+    var groups = svg.selectAll("g")
         .data(stackedData)
-        .enter().append("g")
-        .attr("class", "stack")
-        .style("fill", function (d, i) { return colorScale(d); });
-
-    var yAxis = svg.append("g")
+        .enter()
+        .append("g")
+        .style("fill", function (d) { return color(d.key); });
+        var yAxis = svg.append("g")
         .attr("class", "y-axis")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(yScale));
 
-    
-        var tooltip = d3.select("#stack")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("position", "absolute")
-        .style("z-index", "10")
-        .style("visibility", "hidden")
-        .style("opacity", 0);
-
-    var rects = stacks.selectAll("rect")
+    // Add the rectangles using the data from the stacked dataset
+    groups.selectAll("rect")
         .data(function (d) { return d; })
-        .enter().append("rect")
-        .attr("y", function (d) { return y(d.data.Country); })
-        .attr("x", function (d) { return x(d[0]); })
-        .attr("width", function (d) { return x(d[1]) - x(d[0]); })
-        .attr("height", y.bandwidth() * 1.5)
-        .attr("fill", function (d, i) { return colorScale(d); })
-        // Add tooltip functionality using d3-tip library
-        .on("mouseover", function (d) {
+        .enter()
+        .append("rect")
+        .attr("x", function (d) { return xScale(d[0]); })
+        .attr("y", function (d) { return yScale(d.data.Country); })
+        .attr("width", function (d) { return xScale(d[1]) - xScale(d[0]); })
+        .attr("height", yScale.bandwidth())
+        .on("mouseover", function (i, d) {
             tooltip.transition()
                 .duration(200)
                 .style("opacity", .9);
             tooltip.html("Country: " + d.data.Country + "<br>" +
                 "Vaccine: " + d3.select(this.parentNode).datum().key + "<br>" +
                 "Total Vaccinated: " + (d[1] + d[0]))
-                .style("left", (d3.event.pageX + 10) + "px")
-                .style("top", (d3.event.pageY - 28) + "px")
+                .style("left", (i.pageX + 10) + "px")
+                .style("top", (i.pageY - 28) + "px")
                 .style("visibility", "visible");
             d3.select(this)
                 .style("opacity", 0.5);
@@ -94,25 +75,34 @@ d3.csv("../../data/stacked.csv", function (data) {
                 .style("opacity", 1);
 
         });
-    // Add a legend
-    var legend = svg.selectAll(".legend")
-        .data(data.columns.slice(1).reverse())
-        .enter().append("g")
+    var legend = svg.append("g")
         .attr("class", "legend")
-        .attr("transform", function (d, i) { return "translate(" + (width + margin.right - 100) + "," + (20 + i * 20) + ")"; }); // move legend to right side of chart
+        .attr("transform", "translate(" + (600 - 150) + ", 25)")
+        .selectAll("g")
+        .data(data.columns.slice(1).reverse())
+        .enter()
+        .append("g")
+        .attr("transform", function (d, i) { return "translate(250," + ((i * 20) - 25) + ")"; });
 
     legend.append("rect")
         .attr("x", 0)
         .attr("width", 18)
         .attr("height", 18)
-        .style("fill", function (d) { return colorScale(d) });
+        .style("fill", color);
 
     legend.append("text")
-        .attr("x", 24)
+        .attr("x", -5)
         .attr("y", 9)
         .attr("dy", ".35em")
-        .style("text-anchor", "start")
+        .style("text-anchor", "end")
         .text(function (d) { return d; });
 
 
-});
+    var tooltip = d3.select("#stack")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("visibility", "hidden")
+        .style("opacity", 0);
+});    
