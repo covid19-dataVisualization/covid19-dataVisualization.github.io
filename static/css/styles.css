@@ -4,7 +4,15 @@
     box-sizing: border-box;
   }
 body{
-  background-color: #bcd5bf;
+  background-color: #d0d5bc;
+}
+h2 {
+  text-align: center; /* aligns the text to the center */
+  margin-top: 50px; /* adds some space above the heading */
+  background-color: #a8c80a; /* sets the background color */
+    border: 2px solid #363333; /* adds a border */
+    border-radius: 8px; /* rounds the corners of the border */
+    padding: 10px;
 }
 .container {
     width: 100%;

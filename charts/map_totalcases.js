@@ -1,7 +1,7 @@
 const drawChart = async () => {
-  const width = 800;
-  const height = 450;
-  const margin = { top: 100, right: 100, bottom: 10, left: 100 };
+  const width = 1000;
+  const height = 550;
+  const margin = { top: 15, right: 100, bottom: 60, left: 100 };
 
   const geojson = await d3.json("../../data/geojson.json");
   const coviddata = await d3.json("../../data/coviddata.json");

@@ -1,5 +1,5 @@
-function drawChart_a1_v1() {
-	let div_id = "#barchart";
+function drawChart_a1_v2() {
+	let div_id = "#barchart2";
 
 	// Definition of the div target dimentions
 	let ratio = 3; // 3 width = 1 height
@@ -7,7 +7,7 @@ function drawChart_a1_v1() {
 	let win_height = win_width / ratio;
 
 	// set the dimensions and margins of the graph
-	let margin = { top: 30, right: 0, bottom: 100, left: 100 };
+	let margin = { top: 30, right: 30, bottom: 100, left: 100 };
 	let width = 500;
 	let height = 400 ;
 
@@ -16,7 +16,7 @@ function drawChart_a1_v1() {
 	let svg = d3.select(div_id)
 		.append("svg")
 		.attr("width",600)
-  		.attr("height", 550)
+  		.attr("height",550)
 		.style("background-color","ccc");
 
 	let xScale = d3.scaleBand().range([0, width]).padding(0.4),
@@ -25,26 +25,26 @@ function drawChart_a1_v1() {
 	let g = svg.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	d3.csv("../../data/wafflechart_pie_bubble.csv").then(function (data) {
+	d3.csv("../../data/data_barchart_wafflechart_piechart.csv").then(function (data) {
 		data.forEach(function (d) {
-			d.Total_Cases = +d.Total_Cases;
+			d.Total_Deaths = +d.Total_Deaths;
 		});
 
-		// Sort data in descending order based on Total_Cases
+		// Sort data in descending order based on Total_Deaths
 		data.sort(function (a, b) {
-			return b.Total_Cases - a.Total_Cases;
+			return b.Total_Deaths - a.Total_Deaths;
 		});
 
-		// Extract the top 20 countries by Total_Cases
+		// Extract the top 20 countries by Total_Deaths
 		let top20 = data.slice(0, 20);
 
-		// Calculate the sum of Total_Cases for the other countries
+		// Calculate the sum of Total_Deaths for the other countries
 		let other = data.slice(20, data.length);
-		let sum = d3.sum(other, function (d) { return d.Total_Cases });
+		let sum = d3.sum(other, function (d) { return d.Total_Deaths });
 
 		// Use top20 to create the chart
 		xScale.domain(top20.map(function (d) { return d.Country; }));
-		yScale.domain([0, d3.max(top20, function (d) { return d.Total_Cases; })]);
+		yScale.domain([0, d3.max(top20, function (d) { return d.Total_Deaths; })]);
 
 		g.append("g")
 			
@@ -79,7 +79,7 @@ function drawChart_a1_v1() {
 			.attr("text-anchor", "middle")
 			.style("font-size", "14px")
 			.style("font-weight","bold")
-			.text("Comparing Total cases among Top 20 countries using Line chart");
+			.text("Comparing Total Deaths among Top 20 countries using Line chart");
 			
 		g.selectAll(".bar")
 			.data(top20)
@@ -88,13 +88,13 @@ function drawChart_a1_v1() {
 			.on("mouseover", onMouseOver) // Add listener for event
 			.on("mouseout", onMouseOut)
 			.attr("x", function (d) { return xScale(d.Country); })
-			.attr("y", function (d) { return yScale(d.Total_Cases); })
+			.attr("y", function (d) { return yScale(d.Total_Deaths); })
 			.attr("width", xScale.bandwidth())
 			.transition()
 			.ease(d3.easeLinear)
 			.duration(500)
 			.delay(function (d, i) { return i * 50 })
-			.attr("height", function (d) { return height - yScale(d.Total_Cases); });
+			.attr("height", function (d) { return height - yScale(d.Total_Deaths); });
 
 		d3.select('#other')
 			.html(`
@@ -117,7 +117,7 @@ function drawChart_a1_v1() {
 			.style('top', yPos + 'px')
 			.html(`
 				<h2>${i.Country}</h2>
-				<div> Total_Cases: ${i.Total_Cases.toLocaleString()}</div>
+				<div> Total_Deaths: ${i.Total_Deaths.toLocaleString()}</div>
 			`);
 
 		d3.select('#tooltip').classed('hidden', false);
@@ -127,8 +127,8 @@ function drawChart_a1_v1() {
 			.transition() // I want to add animnation here
 			.duration(500)
 			.attr('width', xScale.bandwidth() + 5)
-			.attr('y', function (d) { return yScale(d.Total_Cases) - 10; })
-			.attr('height', function (d) { return height - yScale(d.Total_Cases) + 10; })
+			.attr('y', function (d) { return yScale(d.Total_Deaths) - 10; })
+			.attr('height', function (d) { return height - yScale(d.Total_Deaths) + 10; })
 
 	}
 
@@ -139,12 +139,12 @@ function drawChart_a1_v1() {
 			.transition()
 			.duration(500)
 			.attr('width', xScale.bandwidth())
-			.attr('y', function (d) { return yScale(d.Total_Cases); })
-			.attr('height', function (d) { return height - yScale(d.Total_Cases) })
+			.attr('y', function (d) { return yScale(d.Total_Deaths); })
+			.attr('height', function (d) { return height - yScale(d.Total_Deaths) })
 
 		d3.select('#tooltip').classed('hidden', true);
 	}
 	
 }
 
-drawChart_a1_v1()
+drawChart_a1_v2()
