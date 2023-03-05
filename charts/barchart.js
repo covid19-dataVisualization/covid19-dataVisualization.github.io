@@ -2,20 +2,22 @@ function drawChart_a1_v1() {
 	let div_id = "#barchart";
 
 	// Definition of the div target dimentions
-	let ratio = 2.5; // 3 width = 1 height
+	let ratio = 3; // 3 width = 1 height
 	let win_width = d3.select(div_id).node().getBoundingClientRect().width;
 	let win_height = win_width / ratio;
 
 	// set the dimensions and margins of the graph
-	let margin = { top: 30, right: 30, bottom: 140, left: 70 };
-	let width = win_width - margin.right - margin.left;
-	let height = win_height - margin.top - margin.bottom;
+	let margin = { top: 30, right: 30, bottom: 100, left: 100 };
+	let width = 500;
+	let height = 400 ;
 
 
 
 	let svg = d3.select(div_id)
 		.append("svg")
-		.attr("viewBox", "0 0 " + win_width + " " + win_height);
+		.attr("width",700)
+  		.attr("height",550)
+		.style("background-color","ccc");
 
 	let xScale = d3.scaleBand().range([0, width]).padding(0.4),
 		yScale = d3.scaleLinear().range([height, 0]);
@@ -45,6 +47,7 @@ function drawChart_a1_v1() {
 		yScale.domain([0, d3.max(top20, function (d) { return d.Total_Cases; })]);
 
 		g.append("g")
+			
 			.attr("transform", "translate(0," + height + ")")
 			.call(d3.axisBottom(xScale))
 			.selectAll("text")
@@ -55,9 +58,8 @@ function drawChart_a1_v1() {
 
 		g.append("g")
 			.append("text")
-			.style("text-anchor", "end")
-			.attr("x", width)
-			.attr("y", height + 50)
+			.attr("x", width/2)
+			.attr("y", height + 70)
 			.attr('text-anchor', 'end')
 			.attr('stroke', 'black')
 			.text("Country")
@@ -66,12 +68,19 @@ function drawChart_a1_v1() {
 			.call(d3.axisLeft(yScale).tickFormat(function (d) { return d; }))
 			.append("text")
 			.attr("transform", "rotate(-90)")
-			.attr("y", 10)
+			.attr("y", -15)
 			.attr('dy', '-5em')
-			.attr('text-anchor', 'end')
 			.attr('stroke', 'black')
 			.text('Count')
-
+			.style("font-size", "12px")
+		g.append("text")
+			.attr("x", (width / 2))
+			.attr("y", 0 - (margin.top / 2))
+			.attr("text-anchor", "middle")
+			.style("font-size", "14px")
+			.style("font-weight","bold")
+			.text("Comparing Total cases among Top 20 countries using Line chart");
+			
 		g.selectAll(".bar")
 			.data(top20)
 			.enter().append("rect")
@@ -135,6 +144,7 @@ function drawChart_a1_v1() {
 
 		d3.select('#tooltip').classed('hidden', true);
 	}
+	
 }
 
 drawChart_a1_v1()
