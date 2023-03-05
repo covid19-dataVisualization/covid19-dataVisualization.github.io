@@ -29,6 +29,7 @@ d3.csv("../../data/stacked.csv").then(function (data) {
     // Create the SVG element
     var svg = d3.select("#stack")
         .append("svg")
+        .style("background-color","ddd")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
