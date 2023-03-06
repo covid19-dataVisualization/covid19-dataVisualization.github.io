@@ -1,6 +1,6 @@
 const pages = [
     ["Visualizing Affected Cases and Deaths", "../../index.html"],
-    ["Visualizing Number of Vaccinated People", "template/vaccination.html"],
+    ["Visualizing Number of Vaccinated People", "../../template/vaccination.html"],
 
 ]
 
