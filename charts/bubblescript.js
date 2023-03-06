@@ -92,9 +92,11 @@ const tooltip = d3.select("#bubble")
 
 // Show tooltip on mouseover
 const mouseover = function(event, d) {
+  
   tooltip
     .style("opacity", 0.8)
   d3.select(this)
+  
     .style("r", function (d) { return z(d.Total_Vaccinations)*1.2; } )
     ;
 };

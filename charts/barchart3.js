@@ -17,7 +17,7 @@ function drawChart_a1_v3() {
 		.append("svg")
 		.attr("width",600)
   		.attr("height",550)
-		.style("background-color","ccc");
+		.style("background-color","ddd");
 
 	let xScale = d3.scaleBand().range([0, width]).padding(0.4),
 		yScale = d3.scaleLinear().range([height, 0]);
