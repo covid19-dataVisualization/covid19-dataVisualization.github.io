@@ -2,16 +2,24 @@
 
 var margin = {top: 20, right: 50, bottom: 30, left: 90},
     width = 800 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 348;
 d3.csv("../../data/stack.csv").then(function (data) {
-    // Step 2: Stack the data
-    var stack = d3.stack()
-        .keys(data.columns.slice(1))
-        .order(d3.stackOrderDescending)
-        .offset(d3.stackOffsetNone);
-
-    var stackedData = stack(data);
-
+    
+       // Sort data by total vaccination
+       data.sort(function(a, b) {
+        return b["Total_vaccinations"] - a["Totalvaccinations"];
+      });
+  
+      // Select top 20 countries by total vaccination
+      var top20 = data.slice(0, 20);
+  
+      // Step 2: Stack the data
+      var stack = d3.stack()
+          .keys(data.columns.slice(1))
+          .order(d3.stackOrderDescending)
+          .offset(d3.stackOffsetNone);
+  
+      var stackedData = stack(top20);
     // Define color scale
     var color = d3.scaleOrdinal()
         .domain(data.columns.slice(1))
@@ -63,7 +71,7 @@ d3.csv("../../data/stack.csv").then(function (data) {
                 .style("opacity", .9);
             tooltip.html("Country: " + d.data.Country + "<br>" +
                 "Vaccine: " + vacc + "<br>" +
-                "Total Vaccinated: " + (d.data[vacc]))
+                "Total Vaccinated: " + (d.data[vacc]) / 1000000 + " m ")
                 .style("left", (i.pageX + 10) + "px")
                 .style("top", (i.pageY - 28) + "px")
                 .style("visibility", "visible");
