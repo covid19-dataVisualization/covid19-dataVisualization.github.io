@@ -35,7 +35,7 @@ function histogram(currentCountry) {
     console.log(filteredData)
 
     if (filteredData.length > 0) {
-      var margin = { top: 10, right: 30, bottom: 50, left: 80 },
+      var margin = { top: 40, right: 30, bottom: 50, left: 80 },
         width = 460 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 

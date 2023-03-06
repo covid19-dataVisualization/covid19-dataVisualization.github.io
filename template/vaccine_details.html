@@ -6,11 +6,18 @@
     <title>Covid Vaccine Detail</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .drop_down_h{
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+    </style>
 </head>
 <body>
     <div id="navigation"></div>
     <script src="../../static/js/top_buttons.js"></script>
-    <select id="select-data">
+    <select id="select-data" class="drop_down_h">
         <option value="people_vaccinated_per_hundred">People Vaccinated per Hundred</option>
         <option value="people_fully_vaccinated_per_hundred">People Fully Vaccinated per Hundred</option>
         <option value="people_with_booster_per_hundred">People with Booster per Hundred</option>
