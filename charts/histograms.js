@@ -1,7 +1,6 @@
 // Set the default country and data type
 const currentCountry = localStorage.getItem("CurrentCounty");
 var currentDataType = "people_vaccinated_per_hundred";
-console.log(currentCountry)
 
 function histogram(currentCountry) {
 
